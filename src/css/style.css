@@ -80,11 +80,13 @@ body {
 
 /* ----- Main ----- */
 main {
-	background: url('./../img/water-image.png') no-repeat fixed;
+	background: url('./../img/water-image.png') no-repeat;
+  background-position-y: -15px;
 }
 
 .container {
-	margin: 0 100px;
+	margin: 10px 100px;
+  padding-top: 100px;
 }
 
 .filter-container {
