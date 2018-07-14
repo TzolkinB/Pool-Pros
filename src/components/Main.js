@@ -154,6 +154,9 @@ class Main extends React.Component {
                 <p className="d-inline">Send my email</p>
                 <img src={Arrow} alt="Next arrow" height="15" width="15" />
               </div>
+              <div className="mobile-submit">
+                <p className="float-right">Send</p>
+              </div>
             </form>
           </div>
           <div className="modal-footer">
