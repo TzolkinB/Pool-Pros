@@ -406,6 +406,7 @@ main {
 }
 
 /* for mobile view only */
+.mobile-checkbox,
 .modal-body > form .mobile-submit {
   display: none;
 }
@@ -547,10 +548,13 @@ footer .icon {
     width: 89%;
   }
 
-  .btn-modal {
-    width: 42%;
-    padding: 10px 0;
-    margin: 15px 10px;
+  .mobile-checkbox {
+    display: inline;
+    line-height: 75px;
+  }
+
+  .mobile-checkbox .custom-checkbox {
+    margin: 15px;
   }
 
   .mobile-submit {
@@ -561,6 +565,7 @@ footer .icon {
   }
 
   .modal-submit,
+  .btn-modal,
   .modal-footer {
     display: none;
   }

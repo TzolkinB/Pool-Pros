@@ -149,6 +149,18 @@ class Main extends React.Component {
                 <br/>
                 <button type="button" className="btn-modal btn-success">Yes</button>
                 <button type="button" className="btn-modal btn-transparent">No</button>
+                <div className="mobile-checkbox">
+                  <label className="d-inline custom-checkbox" htmlFor="yes">
+                    Yes
+                    <input type="checkbox" id="yes" name="pool-owner" value="yes" />
+                    <span className="checkmark"></span>
+                  </label>
+                  <label className="d-inline custom-checkbox" htmlFor="no">
+                    No
+                    <input type="checkbox" id="no" name="pool-owner" value="no" />
+                    <span className="checkmark"></span>
+                  </label>
+                </div>
               </div>
               <div className="modal-submit">
                 <p className="d-inline">Send my email</p>
