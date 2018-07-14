@@ -1,6 +1,7 @@
 import React    from 'react';
 import WaterImg from 'IMG/water-image.png';
 import Phone    from 'IMG/phone-icon-desktop.png';
+import Question from 'IMG/tool-tip-icon-filtering.png';
 import Star     from 'IMG/star-installation-pro.png'; 
 import Home     from 'IMG/home-residential-pro.png';
 import Gear     from 'IMG/gear-service-pro.png';
@@ -30,12 +31,16 @@ const Main = () => {
           <p className="d-inline"><b>Filter Results</b></p>
           {resultType.map(result => {
             return(
-              <div className="d-inline">
-                <input type="checkbox" id={result.name} name="results" value={result.name} checked />
-                <label htmlFor={result.name}>{capitalize(result.name)}</label>
-              </div>
+              <label className="d-inline custom-checkbox" htmlFor={result.name}>
+                {capitalize(result.name)}
+                <input type="checkbox" id={result.name} name="results" value={result.name} />
+                <span className="checkmark"></span>
+              </label>
             );
           })}
+          <span className="tooltip tooltip-right" data-tooltip="Look at me I am a tooltip! ¯\_(ツ)_/¯">
+            <img src={Question} alt="Question mark" />
+          </span>
         </div>
         {dealers.map(dealer => {
           const hours = dealer.data.weekHours;
