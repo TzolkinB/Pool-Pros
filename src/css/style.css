@@ -306,7 +306,7 @@ main {
   background-color: #fff;
   margin: auto;
   border: 1px solid #888;
-  width: 700px;
+  width: 55%;
   height: 930px;
   position: absolute;
   left: 40%;
@@ -337,7 +337,7 @@ main {
 }
 
 .modal-body {
-  padding: 20px 30px;
+  margin: 30px;
   color: #616161;
   font-size: smaller;
 }
@@ -403,6 +403,11 @@ main {
   background: #01C7C6;
   color: #fff;
   margin-right: 10px;
+}
+
+/* for mobile view only */
+.modal-body > form .mobile-submit {
+  display: none;
 }
 
 .modal-body > form .modal-submit {
@@ -486,8 +491,69 @@ footer .icon {
 	text-decoration: none;
 }
 
+/* ----- Laptop ----- */
+/* change max width to 1200? */
 @media screen and (max-width: 1280px) {
 	#main-nav img {
 		margin-right: 7%;
 	}
 }
+
+/* ----- Tablet ----- */
+@media screen and (max-width: 900px) {
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 600px) {
+
+/* ----- Modal ----- */
+  .modal-content {
+    width: 58.5%;
+    height: 800px;
+    top: 40%;
+  }
+
+  .modal-header > .email {
+    padding-top: 20px;
+  }
+
+  .modal-body {
+    margin: 20px;
+    border-bottom: 1px solid #ECECEC;
+  }
+  
+  .modal-body > form {
+    background: #fff;
+    padding: 0;
+  }
+
+  .modal-body > form input,
+  .modal-body > form textarea {
+    width: 91%;
+  }
+
+  .modal-body > form .custom-input input {
+    width: 89%;
+  }
+
+  .btn-modal {
+    width: 43%;
+    padding: 10px 0;
+    margin: 15px 10px;
+  }
+
+  .mobile-submit {
+    display: inline !important;
+    font-size: large;
+    font-weight: bold;
+    color: #01C7C6;
+  }
+
+  .modal-submit,
+  .modal-footer {
+    display: none;
+  }
+
+}
+
+
