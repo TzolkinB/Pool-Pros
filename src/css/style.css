@@ -493,15 +493,26 @@ footer .icon {
 
 /* ----- Laptop ----- */
 /* change max width to 1200? */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
 	#main-nav img {
 		margin-right: 7%;
 	}
+  .modal-body > form input,
+  .modal-body > form textarea {
+    width: 96%;
+  }
 }
 
 /* ----- Tablet ----- */
 @media screen and (max-width: 900px) {
+  .modal-body > form input,
+  .modal-body > form textarea {
+    width: 94%;
+  }
 }
+  .modal-header > .email {
+    padding-top: 20px;
+  }
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 600px) {
@@ -537,7 +548,7 @@ footer .icon {
   }
 
   .btn-modal {
-    width: 43%;
+    width: 42%;
     padding: 10px 0;
     margin: 15px 10px;
   }
