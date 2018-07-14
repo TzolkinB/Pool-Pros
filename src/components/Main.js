@@ -24,6 +24,9 @@ const formatPhone = number => {
   return number.replace(/[-]+/g, ".");
 };
 
+// To DO
+// close modal when clicking outside of modal 
+
 class Main extends React.Component {
   constructor(props) {
     super(props);
