@@ -101,8 +101,8 @@ main {
   flex-grow: 0;
   color: #757575;
   background-color: #fff;
-  width: 29%;
-  height: 500px;
+  width: 400px;
+  height: 520px;
   margin: 15px;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -111,25 +111,30 @@ main {
 }
 
 .card-header {
-	margin-top: 40px;
-	font-size: 32px;
-	font-weight: lighter;
-	text-align: center;
 	width: 100%;
 	height: 100px;
 	border-bottom: 1px solid #ECECEC;
 }
 
+.card-header p {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
 .phone-container {
 	text-align: center;
 	width: 100%;
-	margin: auto;
+	margin-top: 30px;
 }
 
 .phone-container .phone-number p {
 	font-weight: bold;
 	font-size: x-large;
 	display: inline;
+  vertical-align: super;
+  padding-left: 15px;
+  color: #3F3F3F;
 }
 
 .phone-container p {
@@ -141,7 +146,12 @@ main {
 	display: inline;
 }
 
-.btn-card {
+.phone-text {
+  font-style: italic;
+  margin: 20px 0 30px 0;
+}
+
+.btn-custom {
 	background: url('./../img/email-icon.png') 20px/15px no-repeat;
 	height: 50px;
 	font-size: inherit;
@@ -152,9 +162,18 @@ main {
 	font-weight: 500;
 }
 
-.phone-container ul {
+.hours p {
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.hours ul {
 	list-style: none;
 	padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: small;
 }
 
 .card-footer {
@@ -199,12 +218,6 @@ main {
 }
 
 /* ----- Tooltip on the Right ----- */
-/*.tooltip-right:after {
-  top: 50%;
-  left: 100%;
-}
-*/
-
 .tooltip-right:hover:before,
 .tooltip-right:hover:after {
   transform: translateX(5px) translateY(-50%);   
@@ -273,6 +286,162 @@ main {
   width: 8px;
   border: solid white;
   border-width: 8px 0 0 0;
+}
+
+/* ----- Modal ----- */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 500; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  border: 1px solid #888;
+  width: 700px;
+  height: 930px;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  margin-bottom: 100px;
+  margin-top: -200px;
+}
+
+.modal-header {
+  background: #083D8C;
+  color: #fff;
+  height: 140px;
+  margin-top: -16px;
+  padding-left: 30px;
+}
+
+.modal-header > .email {
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+.modal-header > .company-name {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.modal-body {
+  padding: 20px 30px;
+  color: #616161;
+  font-size: smaller;
+}
+
+.modal-body > form {
+  background: #F6F6F6;
+  padding: 30px 20px 0 20px; 
+}
+
+.modal-body > form label {
+  font-weight: bold;
+}
+
+.modal-body > form img {
+  vertical-align: bottom;
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.modal-body > form input {
+  margin: 15px 0;
+  padding: 15px 10px;
+  width: 575px;
+  font-size: smaller;
+  color: #616161;
+  border: 1px solid #D8D8D8;
+}
+
+.modal-body > form .custom-input {
+  width: 245px;
+}
+
+.modal-body > form .custom-input input {
+  width: 223px;
+}
+
+.modal-body > form textarea {
+  margin: 15px 0;
+  padding: 15px 10px;
+  width: 575px;
+  height: 50px;
+  font-size: smaller;
+  color: #616161;
+  border-color: #D8D8D8;
+}
+
+.btn-modal {
+  width: 60px;
+  line-height: 30px;
+  border-radius: 4px;
+  margin: 15px 0 20px 0;
+  font-size: medium;
+}
+
+.btn-transparent {
+  border: 1px solid #3F3F3F;
+  color: #3F3F3F;
+}
+
+.btn-success {
+  border: 1px solid #016B6A;
+  background: #01C7C6;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.modal-body > form .modal-submit {
+  color: #3F3F3F;
+  font-size: large;
+  font-weight: bold;
+	border-top: 1px solid #ECECEC;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.modal-body > form .modal-submit img {
+  margin-left: 20px;
+}
+
+.modal-footer {
+  background: #F6F6F6;
+  color: #616161;
+  font-size: small;
+  padding: 10px 30px;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  background: transparent;
+  border: none;
+}
+
+.close:hover,
+.close:focus {
+  background: #F6F6F6;
+  color: #BEBEBE;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ----- Footer ----- */
