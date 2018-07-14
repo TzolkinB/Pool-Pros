@@ -1,13 +1,17 @@
 import React    from 'react';
-import WaterImg from 'IMG/water-image.png';
-import Phone    from 'IMG/phone-icon-desktop.png';
-import Question from 'IMG/tool-tip-icon-filtering.png';
-import Star     from 'IMG/star-installation-pro.png'; 
-import Home     from 'IMG/home-residential-pro.png';
-import Gear     from 'IMG/gear-service-pro.png';
-import Users    from 'IMG/users-commercial-pro.png'; 
 import json     from './../data/dealers.json';
 import Modal    from './Modal';
+
+import WaterImg    from 'IMG/water-image.png';
+import Phone       from 'IMG/phone-icon-desktop.png';
+import Question    from 'IMG/tool-tip-icon-filtering.png';
+import Star        from 'IMG/star-installation-pro.png'; 
+import Home        from 'IMG/home-residential-pro.png';
+import Gear        from 'IMG/gear-service-pro.png';
+import Users       from 'IMG/users-commercial-pro.png'; 
+import Arrow       from 'IMG/next-arrow.png';
+import EmptyCircle from 'IMG/circle-form.png';
+import CheckCircle from 'IMG/checkmark-circle.png';
 
 const resultType = [
   {name: 'service'},
@@ -123,14 +127,17 @@ class Main extends React.Component {
             <form>
               <div>
                 <label htmlFor="name">First and last name</label>
+                <img src={CheckCircle} alt="Circle with checkmark" className="float-right" />
                 <input type="text" id="name" name="name" />
               </div>
-              <div>
+              <div className="custom-input">
                 <label htmlFor="phone">Phone number</label>
+                <img src={EmptyCircle} alt="Circle with no checkmark" className="float-right" />
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
               </div>
               <div>
                 <label htmlFor="email">Email Address</label>
+                <img src={EmptyCircle} alt="Circle with no checkmark" className="float-right" />
                 <input type="email" id="email" name="email" />
               </div>
               <div>
@@ -139,10 +146,22 @@ class Main extends React.Component {
               </div>
               <div>
                 <label htmlFor="pool">Do you currently own a pool or spa?</label>
+                <br/>
+                <button type="button" className="btn-modal btn-success">Yes</button>
+                <button type="button" className="btn-modal btn-transparent">No</button>
+              </div>
+              <div className="modal-submit">
+                <p className="d-inline">Send my email</p>
+                <img src={Arrow} alt="Next arrow" height="15" width="15" />
               </div>
             </form>
           </div>
           <div className="modal-footer">
+            <p>
+              These are the voyages of the Starship Enterprise. Its continuing
+              mission, to explore strange new worlds, to seek out new life and new
+              civilizations, to boldly go where no one has gone before. 
+            </p>
           </div>
         </Modal>
       </main>

@@ -1,6 +1,5 @@
 import React from 'react'
 
-///skjhdjkhjgedhjghj
 // When the user clicks anywhere outside of the modal, close it
  // Get the modal
 const modal = document.getElementById('myModal');

@@ -289,11 +289,9 @@ main {
 }
 
 /* ----- Modal ----- */
-/* jhghjghgffgjhgfjgfg
 .modal {
   position: fixed; /* Stay in place */
   z-index: 500; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -315,6 +313,8 @@ main {
   top: 50%;
   margin-left: -150px;
   margin-top: -150px;
+  margin-bottom: 100px;
+  margin-top: -200px;
 }
 
 .modal-header {
@@ -339,34 +339,90 @@ main {
 .modal-body {
   padding: 20px 30px;
   color: #616161;
-  font-size: medium;
+  font-size: smaller;
 }
 
 .modal-body > form {
   background: #F6F6F6;
-  padding: 30px 20px 40px 20px; 
+  padding: 30px 20px 0 20px; 
 }
 
 .modal-body > form label {
   font-weight: bold;
 }
 
+.modal-body > form img {
+  vertical-align: bottom;
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+}
+
 .modal-body > form input {
-  margin: 20px 0;
-  padding: 20px 10px;
+  margin: 15px 0;
+  padding: 15px 10px;
   width: 575px;
-  font-size: medium;
+  font-size: smaller;
   color: #616161;
   border: 1px solid #D8D8D8;
 }
+
+.modal-body > form .custom-input {
+  width: 245px;
+}
+
+.modal-body > form .custom-input input {
+  width: 223px;
+}
+
 .modal-body > form textarea {
-  margin: 20px 0;
-  padding: 20px 10px;
+  margin: 15px 0;
+  padding: 15px 10px;
   width: 575px;
-  height: 60px;
-  font-size: medium;
+  height: 50px;
+  font-size: smaller;
   color: #616161;
   border-color: #D8D8D8;
+}
+
+.btn-modal {
+  width: 60px;
+  line-height: 30px;
+  border-radius: 4px;
+  margin: 15px 0 20px 0;
+  font-size: medium;
+}
+
+.btn-transparent {
+  border: 1px solid #3F3F3F;
+  color: #3F3F3F;
+}
+
+.btn-success {
+  border: 1px solid #016B6A;
+  background: #01C7C6;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.modal-body > form .modal-submit {
+  color: #3F3F3F;
+  font-size: large;
+  font-weight: bold;
+	border-top: 1px solid #ECECEC;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.modal-body > form .modal-submit img {
+  margin-left: 20px;
+}
+
+.modal-footer {
+  background: #F6F6F6;
+  color: #616161;
+  font-size: small;
+  padding: 10px 30px;
 }
 
 /* The Close Button */
