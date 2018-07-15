@@ -16,6 +16,11 @@ body {
   display: inline;
 }
 
+/* ----- Colors ----- */
+.blue-text {
+  color: #216DDF;
+}
+
 /* ----- Blue Nav Bar ----- */
 #blue-nav {
 	height: 42px;
@@ -72,7 +77,6 @@ body {
 	padding: 0 25px 0 45px;
 	border-radius: 3px;
 	border: 1px solid #216DDF;
-	color: #216DDF;
 	margin-left: 15px;
 	font-weight: 500;
 }
@@ -81,6 +85,10 @@ body {
 main {
 	background: url('./../img/water-image.png') no-repeat;
   background-position-y: -15px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
 .container {
@@ -91,7 +99,23 @@ main {
 .filter-container {
 	background-color: #F6F6F6;
 	width: 100%;
-	line-height: 80px;
+	height: 80px;
+  border-radius: 10px;
+}
+
+.margin-left {
+  margin-left: 15%;
+}
+
+.filter-container p {
+  font-size: larger;
+}
+
+.vertical-line {
+  margin: 10px 30px -20px 30px;
+  border-left: 3px solid #ECECEC;
+  height: 55px;
+  display: inline-block;
 }
 
 .card {
@@ -101,9 +125,9 @@ main {
   flex-grow: 0;
   color: #757575;
   background-color: #fff;
-  width: 400px;
+  width: 30.5%;
   height: 520px;
-  margin: 15px;
+  margin: 30px 15px;
   border-radius: 5px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);  /* Firefox 3.5 - 3.6 */
@@ -114,6 +138,7 @@ main {
 	width: 100%;
 	height: 100px;
 	border-bottom: 1px solid #ECECEC;
+  margin: 0 15px;
 }
 
 .card-header p {
@@ -130,7 +155,7 @@ main {
 
 .phone-container .phone-number p {
 	font-weight: bold;
-	font-size: x-large;
+	font-size: xx-large;
 	display: inline;
   vertical-align: super;
   padding-left: 15px;
@@ -178,14 +203,17 @@ main {
 
 .card-footer {
 	background-color: #F6F6F6;
-	height: 100px;
+	height: 50px;
 	width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding: 25px 0 20px 45px;
 }
 
-.card-footer img {
-	height: 20px;
+.card-footer p {
+  display: inline;
+  font-size: small;
+  padding-left: 10px;
 }
 
 .service-certification {
@@ -226,15 +254,16 @@ main {
 .tooltip img {
   border-radius: 5px;
   vertical-align: middle;
+  margin-left: 8px;
 }
 
 /* ----- Custom Checkbox ----- */
 /* Customize the label (the container) */
 .custom-checkbox {
   position: relative;
-  padding-left: 35px;
+  padding-left: 75px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: small;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -249,8 +278,8 @@ main {
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -5px;
+  left: 35px;
   height: 25px;
   width: 25px;
   background-color: #eee;
@@ -309,7 +338,7 @@ main {
   width: 55%;
   height: 930px;
   position: absolute;
-  left: 40%;
+  left: 34%;
   top: 50%;
   margin-left: -150px;
   margin-top: -150px;
@@ -493,11 +522,22 @@ footer .icon {
 }
 
 /* ----- Laptop ----- */
-/* change max width to 1200? */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1320px) {
 	#main-nav img {
 		margin-right: 7%;
 	}
+  .margin-left {
+    margin-left: 7%;
+  }
+  .custom-checkbox {
+    padding-left: 50px;
+  }
+  .checkmark {
+    left: 20px;
+  }
+  .card {
+    width: 29.5%;
+  }
   .modal-body > form input,
   .modal-body > form textarea {
     width: 96%;
@@ -505,15 +545,40 @@ footer .icon {
 }
 
 /* ----- Tablet ----- */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+  /* needs menu */
+  .container {
+    margin: 10px 50px;
+  }
+  .margin-left {
+    margin-left: 2%;
+  }
+  .filter-container p {
+    font-size: medium;
+  }
+  .vertical-line {
+    margin: 10px 15px -20px 15px;
+  }
+  .custom-checkbox {
+    padding-left: 35px;
+  }
+  .checkmark {
+    left: 10px;
+  }
+  .card {
+    width: 45%;
+  }
+  .modal-content {
+    left: 37%;
+  }
   .modal-body > form input,
   .modal-body > form textarea {
     width: 94%;
   }
-}
   .modal-header > .email {
     padding-top: 20px;
   }
+}
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 600px) {

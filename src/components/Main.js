@@ -55,8 +55,8 @@ class Main extends React.Component {
       <main>
         <div className="container">
           <div className="filter-container">
-            <p className="d-inline">{dealers.length} dealers in {json.zipcode}</p>
-            <span> | </span>
+            <p className="d-inline blue-text margin-left">{dealers.length} dealers in {json.zipcode}</p>
+            <div className="vertical-line"></div>
             <p className="d-inline"><b>Filter Results</b></p>
             {resultType.map(result => {
               return(
@@ -68,15 +68,16 @@ class Main extends React.Component {
               );
             })}
             <span className="tooltip tooltip-right" data-tooltip="Look at me I am a tooltip! ¯\_(ツ)_/¯">
-              <img src={Question} alt="Question mark" />
+              <img src={Question} alt="Question mark" height="20" width="20" />
             </span>
           </div>
           {dealers.map(dealer => {
             const hours = dealer.data.weekHours;
+            const name = dealer.data.name;
             return(
-              <div className="card">
+              <div className="card" key={name}>
                 <div className="card-header">
-                  <p>{dealer.data.name}</p>
+                  <p>{name}</p>
                 </div>
                 <div className="phone-container">
                   <div className="phone-number">
@@ -84,7 +85,7 @@ class Main extends React.Component {
                     <p>{formatPhone(dealer.data.phone1)}</p>
                   </div>
                   <p className="phone-text">Can't talk now? Click below to send an e-mail.</p>
-                  <button id="myBtn" className="btn-custom" onClick={e => this.toggleModal(e, dealer.data.name)}>
+                  <button id="myBtn" className="btn-custom" onClick={e => this.toggleModal(e, name)}>
                     Contact this Pro
                   </button>
                   <div className="hours">
@@ -98,16 +99,20 @@ class Main extends React.Component {
                 </div>
                 <div className="card-footer">
                   <div className="service-certification">
-                    <img src={Star} alt="Star icon" />
+                    <img src={Star} alt="Star icon" height="12" width="12" />
+                    <p>Installation Pro</p>
                   </div>
                   <div className="service-certification">
-                    <img src={Gear} alt="Gear icon" />
+                    <img src={Gear} alt="Gear icon" height="12" width="12" />
+                    <p>Service Pro</p>
                   </div>
                   <div className="service-certification">
-                    <img src={Home} alt="House icon" />
+                    <img src={Home} alt="House icon" height="12" width="12" />
+                    <p>Residential Pro</p>
                   </div>
                   <div className="service-certification">
-                    <img src={Users} alt="Users icon" />
+                    <img src={Users} alt="Users icon" height="12" width="12" />
+                    <p>Commercial </p>
                   </div>
                 </div>
               </div>
