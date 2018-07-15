@@ -1,9 +1,11 @@
 import React    from 'react';
 import json     from './../data/dealers.json';
 import Modal    from './Modal';
+import Dropdown from './Dropdown';
 
 import WaterImg    from 'IMG/water-image.png';
-import Phone       from 'IMG/phone-icon-desktop.png';
+import PhoneDesk   from 'IMG/phone-icon-desktop.png';
+import PhoneMobile from 'IMG/phone-icon-mobile.png';
 import Question    from 'IMG/tool-tip-icon-filtering.png';
 import Star        from 'IMG/star-installation-pro.png'; 
 import Home        from 'IMG/home-residential-pro.png';
@@ -36,7 +38,8 @@ class Main extends React.Component {
     super(props);
     this.state = {
       modalOpen: false,
-      companyName: null
+      companyName: null,
+      filterValue: 'Filter Results'
     };
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -51,25 +54,49 @@ class Main extends React.Component {
 
   render() {
     const {dealers} = json;
+    
+    const menuProps = {
+      scrollable: true,
+      disable: false,
+      menuWidth: ''
+    };
+
     return(
       <main>
         <div className="container">
           <div className="filter-container">
             <p className="d-inline">{dealers.length} dealers in {json.zipcode}</p>
-            <span> | </span>
-            <p className="d-inline"><b>Filter Results</b></p>
-            {resultType.map(result => {
-              return(
-                <label className="d-inline custom-checkbox" htmlFor={result.name}>
-                  {capitalize(result.name)}
-                  <input type="checkbox" id={result.name} name="results" value={result.name} />
-                  <span className="checkmark"></span>
-                </label>
-              );
-            })}
-            <span className="tooltip tooltip-right" data-tooltip="Look at me I am a tooltip! ¯\_(ツ)_/¯">
-              <img src={Question} alt="Question mark" />
-            </span>
+            <div className="filter-desktop">
+              <span> | </span>
+              <p className="d-inline"><b>Filter Results</b></p>
+              {resultType.map(result => {
+                return(
+                  <label className="d-inline custom-checkbox" htmlFor={result.name}>
+                    {capitalize(result.name)}
+                    <input type="checkbox" id={result.name} name="results" value={result.name} />
+                    <span className="checkmark"></span>
+                  </label>
+                );
+              })}
+              <span className="tooltip tooltip-right" data-tooltip="Look at me I am a tooltip! ¯\_(ツ)_/¯">
+                <img src={Question} alt="Question mark" />
+              </span>
+            </div>
+            <div className="filter-mobile">
+              <Dropdown
+                {...menuProps}
+                value={this.state.filterValue}>
+                  {resultType.map(result => {
+                    return(
+                      <label className="custom-checkbox" htmlFor={result.name}>
+                        {capitalize(result.name)}
+                        <input type="checkbox" id={result.name} name="results" value={result.name} />
+                        <span className="checkmark"></span>
+                      </label>
+                    );
+                  })}
+              </Dropdown>
+            </div>
           </div>
           {dealers.map(dealer => {
             const hours = dealer.data.weekHours;
@@ -80,7 +107,7 @@ class Main extends React.Component {
                 </div>
                 <div className="phone-container">
                   <div className="phone-number">
-                    <img src={Phone} alt="Phone icon" />
+                    <img src={PhoneDesk} alt="Phone icon" />
                     <p>{formatPhone(dealer.data.phone1)}</p>
                   </div>
                   <p className="phone-text">Can't talk now? Click below to send an e-mail.</p>
