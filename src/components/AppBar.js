@@ -20,7 +20,7 @@ const AppBar = () => {
         <a href="#">Supplies</a>
         <a href="#">Resources</a>
         <a href="#">Services</a>
-        <button className="btn-nav">
+        <button className="btn-nav blue-text">
           Find a Pool Pro
         </button>
         <button className="btn-mobile">
