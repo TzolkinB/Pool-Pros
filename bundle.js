@@ -2473,7 +2473,7 @@ module.exports = __webpack_require__.p + "src/img/water-image.png";
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(process) {
 
 var _react = __webpack_require__(0);
 
@@ -2514,10 +2514,11 @@ var App = function App() {
 };
 
 (0, _reactDom.render)(_react2.default.createElement(
-  _reactRouterDom.HashRouter,
-  { basename: '/' },
+  _reactRouterDom.BrowserRouter,
+  { basename: process.env.PUBLIC_URL },
   _react2.default.createElement(App, null)
 ), document.getElementById('pool-pros'));
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 33 */
