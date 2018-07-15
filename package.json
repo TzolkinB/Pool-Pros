@@ -4,16 +4,17 @@
   "description": "RV FED code challenge",
   "main": "app.js",
   "repository": "git@github.com:TzolkinB/Pool-Pros.git",
-  "homepage": "https://tzolkinb.github.io/Pool-Pros",
+  "homepage": "https://pool-pros-1234.firebaseapp.com",
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d dist"
+    "deploy": "firebase deploy"
   },
   "author": "Kimberly Bell",
   "license": "UNLICENSED",
   "dependencies": {
+    "firebase": "^5.2.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-redux": "^5.0.7",

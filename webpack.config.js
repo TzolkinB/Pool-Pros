@@ -13,7 +13,7 @@ module.exports = {
     'bundle': './src/app.js'
   },
   output: {
-    path: paths.DIST,
+    path: paths.PUB,
     publicPath: '/',
     filename: '[name].js',
   },
@@ -21,7 +21,7 @@ module.exports = {
     contentBase: './public',
     port: 4280,
     compress: true,
-    stats: 'errors-only',
+    //stats: 'errors-only',
     historyApiFallback: { index: 'index.html' },
   },
   module: {
