@@ -1,6 +1,7 @@
 import React    from 'react';
 import json     from './../data/dealers.json';
 import Modal    from './Modal';
+import Checkbox from './Checkbox';
 
 import WaterImg    from 'IMG/water-image.png';
 import Phone       from 'IMG/phone-icon-desktop.png';
@@ -20,10 +21,6 @@ const resultType = [
   {name: 'commercial'}
 ];
 
-const capitalize = word => {
-  return (word.charAt(0).toUpperCase() + word.slice(1));
-};
-
 const formatPhone = number => {
   return number.replace(/[-]+/g, ".");
 };
@@ -39,15 +36,15 @@ class Main extends React.Component {
       companyName: null
     };
     this.toggleModal = this.toggleModal.bind(this);
-  }
+  };
 
-  toggleModal(e, name){
+  toggleModal(e, name) {
     e.preventDefault();
     this.setState({
       modalOpen: !this.state.modalOpen,
       companyName: name
     });
-  }
+  };
 
   render() {
     const {dealers} = json;
@@ -58,15 +55,7 @@ class Main extends React.Component {
             <p className="d-inline">{dealers.length} dealers in {json.zipcode}</p>
             <span> | </span>
             <p className="d-inline"><b>Filter Results</b></p>
-            {resultType.map(result => {
-              return(
-                <label className="d-inline custom-checkbox" htmlFor={result.name}>
-                  {capitalize(result.name)}
-                  <input type="checkbox" id={result.name} name="results" value={result.name} />
-                  <span className="checkmark"></span>
-                </label>
-              );
-            })}
+            <Checkbox values={resultType} handleChange={this.toggleCheckbox} />
             <span className="tooltip tooltip-right" data-tooltip="Look at me I am a tooltip! ¯\_(ツ)_/¯">
               <img src={Question} alt="Question mark" />
             </span>
