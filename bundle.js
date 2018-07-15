@@ -2507,7 +2507,7 @@ var App = function App() {
     _react2.default.createElement(
       _reactRouterDom.Switch,
       null,
-      _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Main2.default })
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Main2.default })
     ),
     _react2.default.createElement(_Footer2.default, null)
   );
