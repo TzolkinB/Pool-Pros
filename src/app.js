@@ -1,7 +1,7 @@
 import React      from 'react'
 import { render } from 'react-dom'
 import { 
-  HashRouter, Route, Switch
+  BrowserRouter, Route, Switch
 } from 'react-router-dom'
 
 import 'Style/style.css';
@@ -21,8 +21,8 @@ const App = () => (
 )
 
 render(
-  <HashRouter basename="/">
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
-  </HashRouter>
+  </BrowserRouter>
 
   , document.getElementById('pool-pros'));

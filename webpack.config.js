@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 const paths = {
+  DIST:   path.resolve(__dirname, 'dist'),
   PUB:    path.resolve(__dirname, 'public'),
   CSS:    path.resolve(__dirname, 'src/css'),
   IMG:    path.resolve(__dirname, 'src/img')
@@ -12,7 +13,7 @@ module.exports = {
     'bundle': './src/app.js'
   },
   output: {
-    path: paths.PUB,
+    path: paths.DIST,
     publicPath: '/',
     filename: '[name].js',
   },
