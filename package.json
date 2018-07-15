@@ -4,7 +4,7 @@
   "description": "RV FED code challenge",
   "main": "app.js",
   "repository": "git@github.com:TzolkinB/Pool-Pros.git",
-  "homepage": "https://tzolkinb.github.io/Pool-Pros/",
+  "homepage": "https://tzolkinb.github.io/Pool-Pros",
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack",
