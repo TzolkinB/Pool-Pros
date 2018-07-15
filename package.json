@@ -4,12 +4,12 @@
   "description": "RV FED code challenge",
   "main": "app.js",
   "repository": "git@github.com:TzolkinB/Pool-Pros.git",
-  "homepage": "",
+  "homepage": "https://pool-pros-1234.firebaseapp.com",
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d public"
+    "deploy": "firebase deploy"
   },
   "author": "Kimberly Bell",
   "license": "UNLICENSED",
