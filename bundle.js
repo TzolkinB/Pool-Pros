@@ -2514,7 +2514,7 @@ var App = function App() {
 };
 
 (0, _reactDom.render)(_react2.default.createElement(
-  _reactRouterDom.BrowserRouter,
+  _reactRouterDom.HashRouter,
   { basename: process.env.PUBLIC_URL },
   _react2.default.createElement(App, null)
 ), document.getElementById('pool-pros'));
