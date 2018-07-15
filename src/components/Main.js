@@ -66,7 +66,7 @@ class Main extends React.Component {
         <div className="container">
           <div className="filter-container">
             <p className="d-inline blue-text margin-left">{dealers.length} dealers in {json.zipcode}</p>
-            <div className="filter-desktop">
+            <div className="filter-desktop d-inline">
               <div className="vertical-line"></div>
               <p className="d-inline"><b>Filter Results</b></p>
               {resultType.map(result => {
