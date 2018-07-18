@@ -32,10 +32,24 @@ class AppBar extends React.Component {
 
   renderMenu() {
     const { menuOpen } = this.state;
-    if(menuOpen){
-      return "menu-open";
-    }
-    return "menu-closed";
+    return(
+      <div className={`menu d-inline ${menuOpen ? "menu-open" : "menu-closed"}`}>  
+        <div className="menu-mobile"
+          tabIndex="0"
+          onClick={this.handleClick.bind(this)}
+          onBlur={this.handleBlur.bind(this)}>
+          <img src={MenuIcon} alt="Services menu" height="52" width="52" />
+            <p className="">MENU</p>
+          <ul className={`${menuHeight(scrollable)}`}>
+            {services.map((option, i) => {
+              return(
+                <a key={i} className="" href={option.link}>{option.name}</a>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    );
   }
 
   render() {
@@ -67,20 +81,7 @@ class AppBar extends React.Component {
           <button className="btn-mobile">
             Find a Pro
           </button>
-          <div className={`menu ${this.renderMenu()}`}>  
-            <div className="menu-mobile"
-              tabIndex="0"
-              onClick={this.handleClick.bind(this)}
-              onBlur={this.handleBlur.bind(this)}>
-              <img src={MenuIcon} alt="Services menu" height="52" width="52" />
-            </div>
-            <ul className={`${menuHeight(scrollable)}`}>
-              {services.map((option, i) => {
-                return(
-                  <a key={i} className="" href={option.link}>{option.name}</a>
-                );
-              })}
-            </ul>
+          {renderMenu()}
           </div>
         </div>
       </div>

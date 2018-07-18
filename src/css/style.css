@@ -582,6 +582,19 @@ footer .icon {
   .modal-header > .email {
     padding-top: 20px;
   }
+
+  #main-nav .menu-mobile {
+    display: inline;
+    padding: 0;
+  }
+
+  #main-nav .menu-mobile img {
+    margin-top: 10px;
+  }
+
+  #main-nav a{
+    display: none;
+  }
 }
 
 /* ----- Mobile ----- */
@@ -649,7 +662,6 @@ footer .icon {
   padding-right: 24px;
   line-height: 32px;
   display: inline-block;
-  position: relative;
   font-size: 15px;
   width: -webkit-fill-available;
   width: auto;
@@ -692,12 +704,6 @@ footer .icon {
 .menu div {
   padding: 8px 0;
   list-style: none;
-  position: absolute;
-  box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2);
-  left: 0;
-  margin-top: -32px;
-  top: 100%;
-  min-width: 100%;
   white-space: nowrap;
   overflow-y: auto;
 }
@@ -706,20 +712,29 @@ footer .icon {
   max-height: 250px;
 }
 
-.menu-closed div {
- visibility: hidden; 
+.menu-closed {
+  
 }
 
 .menu-open {
   padding-left: 24px;
   box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2);
-  top: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #fff;
+  border-top: 4px solid #0BC9c8;
+  border-bottom: 4px solid #0BC9C8;;
 }
 
-.menu-open div {
+.menu-open .menu-mobile {
   visibility: visible;
   z-index: 1;
+}
+
+.menu-open .menu-mobile img {
+  visibility: hidden;
 }
 
 /* ----- Cards ----- */
