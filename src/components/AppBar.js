@@ -39,28 +39,25 @@ class AppBar extends React.Component {
           onClick={this.handleClick.bind(this)}
           onBlur={this.handleBlur.bind(this)}>
           <img src={MenuIcon} alt="Services menu" height="52" width="52" />
-            <p className="">MENU</p>
-          <ul className={`${menuHeight(scrollable)}`}>
-            {services.map((option, i) => {
-              return(
-                <a key={i} className="" href={option.link}>{option.name}</a>
-              );
-            })}
-          </ul>
+          <div className="menu-content">
+            <button className="float-right">X</button>
+            <p className="menu-title">MENU</p>
+            <ul>
+              {services.map((option, i) => {
+                return(
+                  <li>
+                    <a key={i} className="menu-link" href={option.link}>{option.name}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     );
   }
 
   render() {
-    const scrollable = true;
-    const menuHeight = scrollable => {
-      if(scrollable){
-        return 'menu-height';
-      }
-      return;
-    }
-
     return(
       <div>
         <div id="blue-nav">
@@ -73,7 +70,11 @@ class AppBar extends React.Component {
         <div id="main-nav">
           <img src={Logo} alt="Pool Pros Logo" className="logo"/>
           {services.map(service => {
-            return <a href="#" key={service.name}>{service.name}</a>
+            return(
+              <a href="#" key={service.name} className="main-nav-link">
+                {service.name}
+              </a>
+            );
           })}
           <button className="btn-nav blue-text">
             Find a Pool Pro
@@ -81,8 +82,7 @@ class AppBar extends React.Component {
           <button className="btn-mobile">
             Find a Pro
           </button>
-          {renderMenu()}
-          </div>
+          {this.renderMenu()}
         </div>
       </div>
     );

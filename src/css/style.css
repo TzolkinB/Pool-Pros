@@ -61,7 +61,7 @@ body {
 	margin-right: 27%;
 }
 
-#main-nav a {
+.main-nav-link {
 	color: #083D8C;
 	text-decoration: none;
 	vertical-align: super;
@@ -81,7 +81,7 @@ body {
 	font-weight: 500;
 }
 
-/* ----- Main ----- */
+/* ----- Main Page Content ----- */
 main {
 	background: url('./../img/water-image.png') no-repeat;
   background-position-y: -15px;
@@ -396,11 +396,11 @@ main {
   border: 1px solid #D8D8D8;
 }
 
-.modal-body > form .custom-input {
+.custom-input {
   width: 245px;
 }
 
-.modal-body > form .custom-input input {
+.custom-input input {
   width: 223px;
 }
 
@@ -435,7 +435,7 @@ main {
 }
 
 
-.modal-body > form .modal-submit {
+.modal-submit {
   color: #3F3F3F;
   font-size: large;
   font-weight: bold;
@@ -444,7 +444,7 @@ main {
   padding: 50px 0;
 }
 
-.modal-body > form .modal-submit img {
+.modal-submit img {
   margin-left: 20px;
 }
 
@@ -583,16 +583,11 @@ footer .icon {
     padding-top: 20px;
   }
 
-  #main-nav .menu-mobile {
-    display: inline;
-    padding: 0;
-  }
-
   #main-nav .menu-mobile img {
     margin-top: 10px;
   }
 
-  #main-nav a{
+  .main-nav-link{
     display: none;
   }
 }
@@ -600,13 +595,13 @@ footer .icon {
 /* ----- Mobile ----- */
 @media screen and (max-width: 600px) {
 
-/* ----- NavBars ----- */
+/* NavBars */
 .main {
   background-position-x: center;
 }
 
 #blue-nav,
-#main-nav a {
+.main-nav-link {
   display:none;
 }
 
@@ -633,16 +628,16 @@ footer .icon {
 	font-weight: 500;
 }
 
-#main-nav .menu-mobile {
+.menu-mobile {
   display: inline;
   padding: 0;
 }
 
-#main-nav .menu-mobile img {
+.menu-mobile img {
   margin-top: 10px;
 }
 
-/* ----- Filter ----- */
+/* Filter */
 .filter-container {
   margin-left: -15px;
   padding-right: 30px;
@@ -658,13 +653,9 @@ footer .icon {
 
 /* Dropdown Menu */
 .menu {
-  padding-left: 24px;
-  padding-right: 24px;
   line-height: 32px;
-  display: inline-block;
   font-size: 15px;
   width: -webkit-fill-available;
-  width: auto;
 }
 
 .menu-label {
@@ -674,31 +665,6 @@ footer .icon {
   pointer-events:none;
   top: -40px;
   width: 100%;
-}
-
-.menu-button {
-  background: transparent;
-  min-width: 100px;
-  letter-spacing: 0.025rem;
-  box-sizing: border-box;
-  position: relative;
-  cursor: pointer;
-  transition: background .3s ease;
-}
-
-.menu-button:hover {
-  transition: background .3s ease;
-}
-
-.menu-button:focus {
-  outline:none;
-}
-
-.triangle {
-  font-size: 50%;
-  padding-left: 10px;
-  vertical-align: middle;
-  float: right;
 }
 
 .menu div {
@@ -712,20 +678,26 @@ footer .icon {
   max-height: 250px;
 }
 
-.menu-closed {
-  
+.menu-content {
+
+}
+
+.menu-title {
+  color: #01529E;
+  font-weight: bold;
+  text-align: center;
 }
 
 .menu-open {
-  padding-left: 24px;
   box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2);
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   background: #fff;
   border-top: 4px solid #0BC9c8;
   border-bottom: 4px solid #0BC9C8;;
+  height: 300px;
+  z-index: 100;
 }
 
 .menu-open .menu-mobile {
@@ -734,26 +706,37 @@ footer .icon {
 }
 
 .menu-open .menu-mobile img {
-  visibility: hidden;
+  display: none;
 }
 
-/* ----- Cards ----- */
-  .card {
-    width: 100%;
-    margin: 0 0 2px 0;
-  }
+.menu-open .menu-content .menu-link {
+  background: #F6F6F6;
+  color: #626262 !important;
+  display: inline !important;
+  list-style: none;
+}
 
-  .phone-number {
-    width: 245;
-    background: #216DDF;
-    margin-left: 45px;
-  }
-  
-  .phone-container .phone-number p {
-    color: #fff;
-  }
+.menu-closed .menu-mobile .menu-content {
+  display: none;
+}
 
-/* ----- Modal ----- */
+/* Cards */
+.card {
+  width: 100%;
+  margin: 0 0 2px 0;
+}
+
+.phone-number {
+  width: 245;
+  background: #216DDF;
+  margin-left: 45px;
+}
+
+.phone-container .phone-number p {
+  color: #fff;
+}
+
+/* Modal */
   .modal-content {
     width: 58.5%;
     height: 800px;
@@ -806,5 +789,4 @@ footer .icon {
   .filter-desktop {
     display: none;
   }
-
 }
