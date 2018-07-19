@@ -1,7 +1,6 @@
 import React    from 'react';
 import json     from './../data/dealers.json';
 import Modal    from './Modal';
-import Dropdown from './Dropdown';
 
 import WaterImg    from 'IMG/water-image.png';
 import PhoneDesk   from 'IMG/phone-icon-desktop.png';
@@ -83,9 +82,6 @@ class Main extends React.Component {
               </span>
             </div>
             <div className="filter-mobile">
-              <Dropdown
-                {...menuProps}
-                value={this.state.filterValue}>
                   {resultType.map(result => {
                     return(
                       <label className="custom-checkbox" htmlFor={result.name}>
@@ -95,7 +91,6 @@ class Main extends React.Component {
                       </label>
                     );
                   })}
-              </Dropdown>
             </div>
           </div>
           {dealers.map(dealer => {

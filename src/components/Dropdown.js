@@ -79,7 +79,6 @@ class Menu extends React.Component {
             {this.toggleArrow()}
           </div>
           <label className={`menu-label ${labelClass}`}>{label}</label>
-          {/*
           <ul className={`${menuClass} ${menuHeight(scrollable)}`}>
             {menuOptions.map((option, i) => {
               const selected = (option.value === value).toString()
@@ -90,10 +89,6 @@ class Menu extends React.Component {
               )
             })}
           </ul>
-          */}
-          <div className={`${menuClass} ${menuHeight(scrollable)}`}>
-            {children}
-          </div>
         </div>
       </div>
     )

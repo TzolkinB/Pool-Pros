@@ -21,7 +21,7 @@ module.exports = {
     contentBase: './public',
     port: 4280,
     compress: true,
-    //stats: 'errors-only',
+    stats: 'errors-only',
     historyApiFallback: { index: 'index.html' },
   },
   module: {

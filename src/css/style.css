@@ -61,7 +61,7 @@ body {
 	margin-right: 27%;
 }
 
-#main-nav a {
+.main-nav-link {
 	color: #083D8C;
 	text-decoration: none;
 	vertical-align: super;
@@ -81,7 +81,7 @@ body {
 	font-weight: 500;
 }
 
-/* ----- Main ----- */
+/* ----- Main Page Content ----- */
 main {
 	background: url('./../img/water-image.png') no-repeat;
   background-position-y: -15px;
@@ -396,11 +396,11 @@ main {
   border: 1px solid #D8D8D8;
 }
 
-.modal-body > form .custom-input {
+.custom-input {
   width: 245px;
 }
 
-.modal-body > form .custom-input input {
+.custom-input input {
   width: 223px;
 }
 
@@ -435,7 +435,7 @@ main {
 }
 
 
-.modal-body > form .modal-submit {
+.modal-submit {
   color: #3F3F3F;
   font-size: large;
   font-weight: bold;
@@ -444,7 +444,7 @@ main {
   padding: 50px 0;
 }
 
-.modal-body > form .modal-submit img {
+.modal-submit img {
   margin-left: 20px;
 }
 
@@ -582,18 +582,26 @@ footer .icon {
   .modal-header > .email {
     padding-top: 20px;
   }
+
+  #main-nav .menu-mobile img {
+    margin-top: 10px;
+  }
+
+  .main-nav-link{
+    display: none;
+  }
 }
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 600px) {
 
-/* ----- NavBars ----- */
+/* NavBars */
 .main {
   background-position-x: center;
 }
 
 #blue-nav,
-#main-nav a {
+.main-nav-link {
   display:none;
 }
 
@@ -620,16 +628,16 @@ footer .icon {
 	font-weight: 500;
 }
 
-#main-nav .menu-mobile {
+.menu-mobile {
   display: inline;
   padding: 0;
 }
 
-#main-nav .menu-mobile img {
+.menu-mobile img {
   margin-top: 10px;
 }
 
-/* ----- Filter ----- */
+/* Filter */
 .filter-container {
   margin-left: -15px;
   padding-right: 30px;
@@ -645,14 +653,9 @@ footer .icon {
 
 /* Dropdown Menu */
 .menu {
-  padding-left: 24px;
-  padding-right: 24px;
   line-height: 32px;
-  display: inline-block;
-  position: relative;
   font-size: 15px;
   width: -webkit-fill-available;
-  width: auto;
 }
 
 .menu-label {
@@ -664,40 +667,9 @@ footer .icon {
   width: 100%;
 }
 
-.menu-button {
-  background: transparent;
-  min-width: 100px;
-  letter-spacing: 0.025rem;
-  box-sizing: border-box;
-  position: relative;
-  cursor: pointer;
-  transition: background .3s ease;
-}
-
-.menu-button:hover {
-  transition: background .3s ease;
-}
-
-.menu-button:focus {
-  outline:none;
-}
-
-.triangle {
-  font-size: 50%;
-  padding-left: 10px;
-  vertical-align: middle;
-  float: right;
-}
-
 .menu div {
   padding: 8px 0;
   list-style: none;
-  position: absolute;
-  box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2);
-  left: 0;
-  margin-top: -32px;
-  top: 100%;
-  min-width: 100%;
   white-space: nowrap;
   overflow-y: auto;
 }
@@ -706,39 +678,71 @@ footer .icon {
   max-height: 250px;
 }
 
-.menu-closed div {
- visibility: hidden; 
+.menu-content button {
+  color: #0BC9c8;
+}
+
+.menu-title {
+  color: #01529E;
+  font-weight: bold;
+  text-align: center;
 }
 
 .menu-open {
-  padding-left: 24px;
   box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2);
-  top: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
   background: #fff;
+  border-top: 4px solid #0BC9c8;
+  border-bottom: 4px solid #0BC9C8;;
+  height: 420px;
+  z-index: 100;
 }
 
-.menu-open div {
+.menu-open .menu-mobile {
   visibility: visible;
   z-index: 1;
 }
 
-/* ----- Cards ----- */
-  .card {
-    width: 100%;
-    margin: 0 0 2px 0;
-  }
+.menu-open .menu-mobile img {
+  display: none;
+}
 
-  .phone-number {
-    width: 245;
-    background: #216DDF;
-    margin-left: 45px;
-  }
-  
-  .phone-container .phone-number p {
-    color: #fff;
-  }
+.menu-open .menu-content .menu-link {
+  background: #F6F6F6;
+  color: #626262 !important;
+  list-style: none;
+  padding: 25px;
+  margin-left: -40px;
+  margin-bottom: 2px;
+}
 
-/* ----- Modal ----- */
+.menu-open .menu-mobile .menu-content .menu-link img {
+  display: inline;
+}
+
+.menu-closed .menu-mobile .menu-content {
+  display: none;
+}
+
+/* Cards */
+.card {
+  width: 100%;
+  margin: 0 0 2px 0;
+}
+
+.phone-number {
+  width: 245;
+  background: #216DDF;
+  margin-left: 45px;
+}
+
+.phone-container .phone-number p {
+  color: #fff;
+}
+
+/* Modal */
   .modal-content {
     width: 58.5%;
     height: 800px;
@@ -791,5 +795,4 @@ footer .icon {
   .filter-desktop {
     display: none;
   }
-
 }
