@@ -6,6 +6,7 @@ import {
   BrowserRouter, Route, Switch
 } from 'react-router-dom'
 
+//import 'Style/ss-pika.css';
 import 'Style/style.css';
 
 import AppBar from  './components/AppBar';

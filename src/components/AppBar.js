@@ -1,8 +1,9 @@
-import React    from 'react';
-import { Link } from 'react-router-dom';
-import GoTo     from 'IMG/action-commercial-icon.png';
-import Logo     from 'IMG/pool-pros-logo.png';
-import MenuIcon from 'IMG/menu-icon-mobile.png';
+import React     from 'react';
+import { Link }  from 'react-router-dom';
+import GoTo      from 'IMG/action-commercial-icon.png';
+import Logo      from 'IMG/pool-pros-logo.png';
+import MenuIcon  from 'IMG/menu-icon-mobile.png';
+import nextArrow from 'IMG/next-arrow.png';
 
 const services = [
   {name: 'Pool & Spas'},
@@ -45,8 +46,9 @@ class AppBar extends React.Component {
             <ul>
               {services.map((option, i) => {
                 return(
-                  <li>
-                    <a key={i} className="menu-link" href={option.link}>{option.name}</a>
+                  <li className="menu-link">
+                    <a key={i} href={option.link}>{option.name}</a>
+                    <img src={nextArrow} alt="right arrow icon" className="d-inline float-right" />
                   </li>
                 );
               })}
