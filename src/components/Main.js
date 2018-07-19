@@ -25,6 +25,7 @@ const capitalize = word => {
   return (word.charAt(0).toUpperCase() + word.slice(1));
 };
 
+
 const formatPhone = number => {
   return number.replace(/[-]+/g, ".");
 };
@@ -38,9 +39,11 @@ class Main extends React.Component {
     this.state = {
       modalOpen: false,
       companyName: null,
-      filterValue: 'Filter Results'
+      filters: [],
+      isChecked: false
     };
     this.toggleModal = this.toggleModal.bind(this);
+    //this.handleChange = this.handleChange.bind(this);
   }
 
   toggleModal(e, name){
@@ -51,15 +54,49 @@ class Main extends React.Component {
     });
   }
 
-  render() {
-    const {dealers} = json;
+  handleChange(e) {
+    let { filters, isChecked } = this.state;
+    const {checked, value} = e.target;
+    this.setState({ isChecked: !isChecked});
     
-    const menuProps = {
-      scrollable: true,
-      disable: false,
-      menuWidth: ''
-    };
+    //if checked and not included in filters array (-1)
+    if(checked && filters.indexOf(value) === -1) {
+      this.setState({ filters: [...filters, value] });
+    }
+    if(!checked) {
+      const filterBy = filters.indexOf(value);
+      let newFilter = filters.filter(filterBy => filterBy != value);
+      this.setState({ filters: newFilter });
+    }
+    return;
+  }
 
+  render() {
+    const { filters, isChecked } = this.state;
+    const { dealers } = json;
+
+    const certs = filters.map(name => { 
+      return capitalize(name) + " Pro";
+    });
+    console.log('certs', certs);
+    const matchBusiness = (dealer, certifications) => {
+      const a = JSON.stringify(certifications.sort());
+      const b = JSON.stringify(certs.sort());
+      let match = dealers.reduce((foods, food) => {
+        if(dealers.every(f => food.certifications.indexOf(f) !== -1)) {
+          foods.push(food);
+        }
+        return foods;
+      }, []);
+      console.log('f', foods);
+      //const match = dealers.filter(val => {
+      //  return val.a === b;
+      //})
+      //console.log('match', dealers.filter(val => val.a === b));
+      //console.log('match22', dealers.filter(val => val.a != b));
+    }
+
+    
     return(
       <main>
         <div className="container">
@@ -72,7 +109,13 @@ class Main extends React.Component {
                 return(
                   <label key={result.name} className="d-inline custom-checkbox" htmlFor={result.name}>
                     {result.name}
-                    <input type="checkbox" id={result.name} name="results" value={result.name} />
+                    <input 
+                      type="checkbox"
+                      name="results"
+                      checked={result.name.isChecked}
+                      onChange={e => this.handleChange(e)}
+                      id={result.name}
+                      value={result.name} />
                     <span className="checkmark"></span>
                   </label>
                 );
@@ -96,9 +139,11 @@ class Main extends React.Component {
           {dealers.map(dealer => {
             const hours = dealer.data.weekHours;
             const name = dealer.data.name;
+            const certifications = dealer.data.certifications;
             return(
               <div className="card" key={name}>
                 <div className="card-header">
+                  {matchBusiness(dealer, certifications)}
                   <p>{name}</p>
                 </div>
                 <div className="phone-container">
