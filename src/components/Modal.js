@@ -12,14 +12,11 @@ window.onclick = function(event) {
 
 class Modal extends React.Component {
   render() {
-    const {
-      children, show
-    } = this.props;
+    const {children, show} = this.props;
     
     if(!show) {
       return null;
     }
-    console.log('show', show);
     return(
       <div className="modal">
         <div id="myModal" className="modal-content">

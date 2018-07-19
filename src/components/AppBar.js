@@ -46,8 +46,8 @@ class AppBar extends React.Component {
             <ul>
               {services.map((option, i) => {
                 return(
-                  <li className="menu-link">
-                    <a key={i} href={option.link}>{option.name}</a>
+                  <li key={i} className="menu-link">
+                    <a href={option.link}>{option.name}</a>
                     <img src={nextArrow} alt="right arrow icon" className="d-inline float-right" />
                   </li>
                 );

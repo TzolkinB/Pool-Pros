@@ -70,8 +70,8 @@ class Main extends React.Component {
               <p className="d-inline"><b>Filter Results</b></p>
               {resultType.map(result => {
                 return(
-                  <label className="d-inline custom-checkbox" htmlFor={result.name}>
-                    {capitalize(result.name)}
+                  <label key={result.name} className="d-inline custom-checkbox" htmlFor={result.name}>
+                    {result.name}
                     <input type="checkbox" id={result.name} name="results" value={result.name} />
                     <span className="checkmark"></span>
                   </label>
@@ -84,8 +84,8 @@ class Main extends React.Component {
             <div className="filter-mobile">
                   {resultType.map(result => {
                     return(
-                      <label className="custom-checkbox" htmlFor={result.name}>
-                        {capitalize(result.name)}
+                      <label key={result.name} className="custom-checkbox" htmlFor={result.name}>
+                        {result.name}
                         <input type="checkbox" id={result.name} name="results" value={result.name} />
                         <span className="checkmark"></span>
                       </label>
