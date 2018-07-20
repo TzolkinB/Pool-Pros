@@ -785,9 +785,9 @@ footer .icon {
   }
 
   .menu-button p {
-    margin-left: 15px;
+    margin-left: 10px;
     margin-top: 15px;
-    font-size: large;
+    font-size: medium;
   }
 
   .menu-button:hover {
@@ -800,10 +800,10 @@ footer .icon {
 
   .triangle {
     font-size: 70%;
-    padding: 5px 20px;
+    padding: 5px 15px;
     line-height: 45px;
     margin-top: -15px;
-    margin-left: 15px;
+    margin-left: 10px;
     background-color: #F6F6F6;
     border-left: 1px solid #D8D8D8;
     float: right;
