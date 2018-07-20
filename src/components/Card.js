@@ -16,6 +16,21 @@ const Card = props => {
     dealerArray
   } = props;
 
+  const icons = (cert) => {
+    if (cert === "Installation Pro") {
+      return <img src={Star} alt="Star icon" height="12" width="12" />;
+    }
+    if (cert === "Service Pro") {
+      return <img src={Gear} alt="Gear icon" height="12" width="12" />;
+    }
+    if (cert === "Residential Pro") {
+      return <img src={Home} alt="Home icon" height="12" width="12" />;
+    }
+    if (cert === "Commercial Pro") {
+      return <img src={Users} alt="Users icon" height="12" width="12" />;
+    }
+  }
+
 
   return(
     <React.Fragment>
@@ -42,22 +57,14 @@ const Card = props => {
           </div>
         </div>
         <div className="card-footer">
-          <div className="service-certification">
-            <img src={Star} alt="Star icon" height="12" width="12" />
-            <p>Installation Pro</p>
-          </div>
-          <div className="service-certification">
-            <img src={Gear} alt="Gear icon" height="12" width="12" />
-            <p>Service Pro</p>
-          </div>
-          <div className="service-certification">
-            <img src={Home} alt="House icon" height="12" width="12" />
-            <p>Residential Pro</p>
-          </div>
-          <div className="service-certification">
-            <img src={Users} alt="Users icon" height="12" width="12" />
-            <p>Commercial </p>
-          </div>
+          {certifications.map((cert, i) => {
+            return(
+              <div key={i} className="service-certification">
+                {icons(cert)}
+                <p>{cert}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </React.Fragment>
