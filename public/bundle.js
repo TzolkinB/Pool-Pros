@@ -24584,7 +24584,7 @@ exports = module.exports = __webpack_require__(75)(false);
 
 
 // module
-exports.push([module.i, "html { \n  position: relative;\n  min-height: 100%;\n}\n\nbody { \n  margin: 0 0 100px 0;\n  font-family: 'open-sans', sans-serif;\n}\n\n.float-right {\n\tfloat: right;\n}\n\n.d-inline {\n  display: inline;\n}\n\n/* ----- Colors ----- */\n.blue-text {\n  color: #216DDF;\n}\n\n/* ----- Blue Nav Bar ----- */\n#blue-nav {\n\theight: 42px;\n\tbackground-color: #083D8C;\n}\n\n#blue-nav a {\n\ttext-decoration: none;\n\tcolor: #fff;\n\tmargin-top: 15px;\n\tfont-size: small;\n\tpadding: 0 20px;\n}\n\n.commercial-service {\n\tmargin-top: 13px;\n\tmargin-right: 80px;\n}\n\n.commercial-service img {\n\theight: 15px;\n\tvertical-align: middle;\n\tmargin-left: -10px;\n}\n\n/* ----- BrandBar ----- */\n#main-nav {\n\theight: 102px;\n  -webkit-box-shadow: 0px 5px 6px -6px #000;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */\n  -moz-box-shadow:    0px 5px 6px -6px #000;  /* Firefox 3.5 - 3.6 */\n  box-shadow: 0 5px 6px -6px #000;\n }\n\n#main-nav .logo {\n\theight: 32px;\n\tmargin-top: 35px;\n\tmargin-left: 80px;\n\tmargin-right: 27%;\n}\n\n.main-nav-link {\n\tcolor: #083D8C;\n\ttext-decoration: none;\n\tvertical-align: super;\n\tfont-weight: bold;\n\tpadding: 0 30px;\n}\n\n.btn-nav {\n\tbackground: url(" + escape(__webpack_require__(31)) + ") 20px/15px no-repeat;\n\theight: 50px;\n\tvertical-align: super;\n\tfont-size: inherit;\n\tpadding: 0 25px 0 45px;\n\tborder-radius: 3px;\n\tborder: 1px solid #216DDF;\n\tmargin-left: 15px;\n\tfont-weight: 500;\n}\n\n/* ----- Main Page Content ----- */\nmain {\n\tbackground: url(" + escape(__webpack_require__(32)) + ") no-repeat;\n  background-position-y: -15px;\n  -webkit-background-size: contain;\n  -moz-background-size: contain;\n  -o-background-size: contain;\n  background-size: contain;\n}\n\n.container {\n\tmargin: 10px 100px;\n  padding-top: 100px;\n}\n\n.filter-container {\n\tbackground-color: #F6F6F6;\n\twidth: 100%;\n\theight: 80px;\n  border-radius: 10px;\n}\n\n.margin-left {\n  margin-left: 15%;\n}\n\n.filter-container p {\n  font-size: larger;\n}\n\n.vertical-line {\n  margin: 10px 30px -20px 30px;\n  border-left: 3px solid #ECECEC;\n  height: 55px;\n  display: inline-block;\n}\n\n.card {\n  display: inline-flex;\n  flex-flow: row wrap;\n  flex: auto;\n  flex-grow: 0;\n  color: #757575;\n  background-color: #fff;\n  width: 30.5%;\n  height: 520px;\n  margin: 30px 15px;\n  border-radius: 5px;\n  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */\n  -moz-box-shadow:    0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);  /* Firefox 3.5 - 3.6 */\n  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);\n}\n\n.card-header {\n\twidth: 100%;\n\theight: 100px;\n\tborder-bottom: 1px solid #ECECEC;\n  margin: 0 15px;\n}\n\n.card-header p {\n  font-size: 30px;\n  font-weight: 300;\n  text-align: center;\n}\n\n.phone-container {\n\ttext-align: center;\n\twidth: 100%;\n\tmargin-top: 30px;\n}\n\n.phone-container .phone-number p {\n\tfont-weight: bold;\n\tfont-size: xx-large;\n\tdisplay: inline;\n  vertical-align: super;\n  padding-left: 15px;\n  color: #3F3F3F;\n}\n\n.phone-container p {\n\tfont-size: small;\n}\n\n.phone-number img {\n\theight: 30px;\n\tdisplay: inline;\n}\n\n.phone-text {\n  font-style: italic;\n  margin: 20px 0 30px 0;\n}\n\n.btn-custom {\n\tbackground: url(" + escape(__webpack_require__(76)) + ") 20px/15px no-repeat;\n\theight: 50px;\n\tfont-size: inherit;\n\tpadding: 0 25px 0 45px;\n\tborder-radius: 3px;\n\tborder: 1px solid #02C7C6;\n\tcolor: #083D8C;\n\tfont-weight: 500;\n}\n\n.hours p {\n  font-weight: bold;\n  margin-top: 50px;\n  margin-bottom: 0;\n}\n\n.hours ul {\n\tlist-style: none;\n\tpadding-left: 0;\n  margin-top: 0;\n  margin-bottom: 30px;\n  font-size: small;\n}\n\n.card-footer {\n\tbackground-color: #F6F6F6;\n\theight: 50px;\n\twidth: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  padding: 25px 0 20px 45px;\n}\n\n.card-footer p {\n  display: inline;\n  font-size: small;\n  padding-left: 10px;\n}\n\n.service-certification {\n  width: 50%;\n}\n\n/* ----- Tooltip ----- */\n[data-tooltip] {\n  position: relative;\n  cursor: pointer;\n  vertical-align: bottom;\n}\n\n.tooltip:after {\n  visibility: hidden;\n  content: attr(data-tooltip);\n  white-space: nowrap;\n  padding: 10px;\n  background: rgba(97, 97, 97, 0.9);\n  color: #fff;\n  z-index: 100;\n  font-size: 12px;\n  font-weight: 500;\n  border-radius: 2px;\n  margin-left: 5px;\n}\n\n.tooltip:hover:after {\n  visibility: visible;\n}\n\n/* ----- Tooltip on the Right ----- */\n.tooltip-right:hover:before,\n.tooltip-right:hover:after {\n  transform: translateX(5px) translateY(-50%);   \n}\n\n.tooltip img {\n  border-radius: 5px;\n  vertical-align: middle;\n  margin-left: 8px;\n}\n\n/* ----- Custom Checkbox ----- */\n/* Customize the label (the container) */\n.custom-checkbox {\n  position: relative;\n  padding-left: 75px;\n  cursor: pointer;\n  font-size: small;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n\n/* Hide the browser's default checkbox */\n.custom-checkbox input {\n  display: none;\n}\n\n/* Create a custom checkbox */\n.checkmark {\n  position: absolute;\n  top: -5px;\n  left: 35px;\n  height: 25px;\n  width: 25px;\n  background-color: #eee;\n  border-radius: 5px;\n}\n\n/* On mouse-over, add a grey background color */\n.custom-checkbox:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n\n/* When the checkbox is checked, add a blue background */\n.custom-checkbox input:checked ~ .checkmark {\n  background-color: #216DDF;\n}\n\n/* Create the checkmark/indicator (hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n\n/* Show the checkmark when checked */\n.custom-checkbox input:checked ~ .checkmark:after {\n  display: block;\n}\n\n/* Style the checkmark/indicator */\n.custom-checkbox .checkmark:after {\n  left: 8px;\n  top: 9px;\n  width: 8px;\n  border: solid white;\n  border-width: 8px 0 0 0;\n}\n\n/* ----- Modal ----- */\n.modal {\n  position: fixed; /* Stay in place */\n  z-index: 500; /* Sit on top */\n  left: 0;\n  top: 0;\n  width: 100%; /* Full width */\n  height: 100%; /* Full height */\n  overflow: auto; /* Enable scroll if needed */\n  background-color: rgb(0,0,0); /* Fallback color */\n  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n}\n\n/* Modal Content */\n.modal-content {\n  background-color: #fff;\n  margin: auto;\n  border: 1px solid #888;\n  width: 55%;\n  height: 930px;\n  position: absolute;\n  left: 34%;\n  top: 50%;\n  margin-left: -150px;\n  margin-top: -150px;\n  margin-bottom: 100px;\n  margin-top: -200px;\n}\n\n.modal-header {\n  background: #083D8C;\n  color: #fff;\n  height: 140px;\n  margin-top: -16px;\n  padding-left: 30px;\n}\n\n.modal-header > .email {\n  margin-top: 0;\n  padding-top: 40px;\n}\n\n.modal-header > .company-name {\n  font-size: 30px;\n  font-weight: 300;\n  margin: 0;\n}\n\n.modal-body {\n  margin: 30px;\n  color: #616161;\n  font-size: smaller;\n}\n\n.modal-body > form {\n  background: #F6F6F6;\n  padding: 30px 20px 0 20px; \n}\n\n.modal-body > form label {\n  font-weight: bold;\n}\n\n.modal-body > form img {\n  vertical-align: bottom;\n  margin-right: 5px;\n  height: 20px;\n  width: 20px;\n}\n\n.modal-body > form input {\n  margin: 15px 0;\n  padding: 15px 10px;\n  width: 575px;\n  font-size: smaller;\n  color: #616161;\n  border: 1px solid #D8D8D8;\n}\n\n.custom-input {\n  width: 245px;\n}\n\n.custom-input input {\n  width: 223px;\n}\n\n.modal-body > form textarea {\n  margin: 15px 0;\n  padding: 15px 10px;\n  width: 575px;\n  height: 50px;\n  font-size: smaller;\n  color: #616161;\n  border-color: #D8D8D8;\n}\n\n.btn-modal {\n  width: 60px;\n  line-height: 30px;\n  border-radius: 4px;\n  margin: 15px 0 20px 0;\n  font-size: medium;\n}\n\n.btn-transparent {\n  border: 1px solid #3F3F3F;\n  color: #3F3F3F;\n}\n\n.btn-success {\n  border: 1px solid #016B6A;\n  background: #01C7C6;\n  color: #fff;\n  margin-right: 10px;\n}\n\n\n.modal-submit {\n  color: #3F3F3F;\n  font-size: large;\n  font-weight: bold;\n\tborder-top: 1px solid #ECECEC;\n  text-align: center;\n  padding: 50px 0;\n}\n\n.modal-submit img {\n  margin-left: 20px;\n}\n\n.modal-footer {\n  background: #F6F6F6;\n  color: #616161;\n  font-size: small;\n  padding: 10px 30px;\n}\n\n/* The Close Button */\n.close {\n  color: #fff;\n  float: right;\n  font-size: 28px;\n  font-weight: bold;\n  line-height: 1;\n  background: transparent;\n  border: none;\n}\n\n.close:hover,\n.close:focus {\n  background: #F6F6F6;\n  color: #BEBEBE;\n  text-decoration: none;\n  cursor: pointer;\n}\n\n/* ----- Footer ----- */\nfooter {\n\theight: 130px;\n\tbackground-color: #083D8C;\n\tposition: absolute;\n  bottom: 0;\n  width: 100%;\n  text-align: center;\n  padding-top: 40px;\n  color: #fff;\n}\n\nfooter p {\n\tdisplay: inline;\n}\n\nfooter .icon {\n\theight: 15px;\n}\n\n.footer-logo {\n\twidth: 200px;\n}\n\n.copyright {\n\tline-height: 40px;\n\tbackground-color: #216DDF;\n\tcolor: #fff;\n\tfont-size: small;\n\tfont-weight: 300;\n\tmargin-top: 39px;\n}\n\n.copyright p{\n\tdisplay: inline;\n}\n\n.copyright a {\n\tcolor: #fff;\n\ttext-decoration: none;\n}\n\n/* for mobile view only */\n.mobile-checkbox,\n.modal-body > form .mobile-submit,\n#main-nav .btn-mobile,\n.menu-mobile,\n.filter-mobile {\n  display: none;\n}\n\n/* ----- Laptop ----- */\n@media screen and (max-width: 1200px) {\n\t#main-nav .logo {\n\t\tmargin-right: 7%;\n\t}\n  .margin-left {\n    margin-left: 7%;\n  }\n  .custom-checkbox {\n    padding-left: 50px;\n  }\n  .checkmark {\n    left: 20px;\n  }\n  .card {\n    width: 29.5%;\n  }\n  .modal-body > form input,\n  .modal-body > form textarea {\n    width: 96%;\n  }\n}\n\n/* ----- Tablet ----- */\n@media screen and (max-width: 1000px) {\n  /* needs menu */\n  .container {\n    margin: 10px 50px;\n  }\n  .margin-left {\n    margin-left: 2%;\n  }\n  .filter-container p {\n    font-size: medium;\n  }\n  .vertical-line {\n    margin: 10px 15px -20px 15px;\n  }\n  .custom-checkbox {\n    padding-left: 35px;\n  }\n  .checkmark {\n    left: 10px;\n  }\n  .card {\n    width: 45%;\n  }\n  .modal-content {\n    left: 37%;\n  }\n  .modal-body > form input,\n  .modal-body > form textarea {\n    width: 94%;\n  }\n  .modal-header > .email {\n    padding-top: 20px;\n  }\n\n  #main-nav .menu-mobile img {\n    margin-top: 10px;\n  }\n\n  .main-nav-link{\n    display: none;\n  }\n}\n\n/* ----- Mobile ----- */\n@media screen and (max-width: 600px) {\n\n/* NavBars */\n.main {\n  background-position-x: center;\n}\n\n#blue-nav,\n.main-nav-link {\n  display:none;\n}\n\n#main-nav {\n  height: 55px;\n}\n#main-nav .logo {\n  margin: 20px 10px 15px 8px;\n  height: 20px;\n}\n\n#main-nav .btn-mobile{\n  height: 35px;\n  display: inline;\n  /* width 110 */\n\tbackground: url(" + escape(__webpack_require__(31)) + ") 7px/15px no-repeat;\n\tvertical-align: top;\n\tfont-size: inherit;\n\tpadding: 0 10px 0 25px;\n\tborder-radius: 3px;\n\tborder: 2px solid #216DDF;\n\tcolor: #216DDF;\n  margin: 10px 15px;\n\tfont-weight: 500;\n}\n\n.menu-mobile {\n  display: inline;\n  padding: 0;\n}\n\n.menu-mobile img {\n  margin-top: 10px;\n}\n\n/* Filter */\n.filter-container {\n  margin-left: -15px;\n  padding-right: 30px;\n}\n\n.container {\n  margin: 10px 15px;\n}\n\n.filter-mobile {\n  display: inline;\n}\n\n/* Dropdown Menu */\n.menu {\n  line-height: 32px;\n  font-size: 15px;\n  width: -webkit-fill-available;\n}\n\n.menu-label {\n  position: absolute;\n  font-size:12px;\n  font-weight:normal;\n  pointer-events:none;\n  top: -40px;\n  width: 100%;\n}\n\n.menu div {\n  padding: 8px 0;\n  list-style: none;\n  white-space: nowrap;\n  overflow-y: auto;\n}\n\n.menu-height {\n  max-height: 250px;\n}\n\n.menu-content button {\n  color: #0BC9c8;\n}\n\n.menu-title {\n  color: #01529E;\n  font-weight: bold;\n  text-align: center;\n}\n\n.menu-open {\n  box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2);\n  position: absolute;\n  top: 0;\n  right: 0;\n  background: #fff;\n  border-top: 4px solid #0BC9c8;\n  border-bottom: 4px solid #0BC9C8;;\n  height: 420px;\n  z-index: 100;\n}\n\n.menu-open .menu-mobile {\n  visibility: visible;\n  z-index: 1;\n}\n\n.menu-open .menu-mobile img {\n  display: none;\n}\n\n.menu-open .menu-content .menu-link {\n  background: #F6F6F6;\n  color: #626262 !important;\n  list-style: none;\n  padding: 25px;\n  margin-left: -40px;\n  margin-bottom: 2px;\n}\n\n.menu-open .menu-mobile .menu-content .menu-link img {\n  display: inline;\n}\n\n.menu-closed .menu-mobile .menu-content {\n  display: none;\n}\n\n/* Cards */\n.card {\n  width: 100%;\n  margin: 0 0 2px 0;\n}\n\n.phone-number {\n  width: 245;\n  background: #216DDF;\n  margin-left: 45px;\n}\n\n.phone-container .phone-number p {\n  color: #fff;\n}\n\n/* Modal */\n  .modal-content {\n    width: 58.5%;\n    height: 800px;\n    top: 40%;\n  }\n\n  .modal-header > .email {\n    padding-top: 20px;\n  }\n\n  .modal-body {\n    margin: 20px;\n    border-bottom: 1px solid #ECECEC;\n  }\n  \n  .modal-body > form {\n    background: #fff;\n    padding: 0;\n  }\n\n  .modal-body > form input,\n  .modal-body > form textarea {\n    width: 91%;\n  }\n\n  .modal-body > form .custom-input input {\n    width: 89%;\n  }\n\n  .mobile-checkbox {\n    display: inline;\n    line-height: 75px;\n  }\n\n  .mobile-checkbox .custom-checkbox {\n    margin: 15px;\n  }\n\n  .mobile-submit {\n    display: inline !important;\n    font-size: large;\n    font-weight: bold;\n    color: #01C7C6;\n  }\n\n  .modal-submit,\n  .btn-modal,\n  .modal-footer,\n  .btn-nav,\n  .filter-desktop {\n    display: none;\n  }\n}\n", ""]);
+exports.push([module.i, "html { \n  position: relative;\n  min-height: 100%;\n}\n\nbody { \n  margin: 0 0 170px 0;\n  font-family: 'open-sans', sans-serif;\n}\n\n.float-right {\n\tfloat: right;\n}\n\n.d-inline {\n  display: inline;\n}\n\n/* ----- Colors ----- */\n.blue-text {\n  color: #216DDF;\n}\n\n/* ----- Blue Nav Bar ----- */\n#blue-nav {\n\theight: 42px;\n\tbackground-color: #083D8C;\n}\n\n#blue-nav a {\n\ttext-decoration: none;\n\tcolor: #fff;\n\tmargin-top: 15px;\n\tfont-size: small;\n\tpadding: 0 20px;\n}\n\n.commercial-service {\n\tmargin-top: 13px;\n\tmargin-right: 80px;\n}\n\n.commercial-service img {\n\theight: 15px;\n\tvertical-align: middle;\n\tmargin-left: -10px;\n}\n\n/* ----- BrandBar ----- */\n#main-nav {\n\theight: 102px;\n  display: flex;\n  justify-content: space-between;\n  -webkit-box-shadow: 0px 5px 6px -6px #000;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */\n  -moz-box-shadow:    0px 5px 6px -6px #000;  /* Firefox 3.5 - 3.6 */\n  box-shadow: 0 5px 6px -6px #000;\n }\n\n#main-nav .logo {\n\theight: 32px;\n\tmargin-top: 35px;\n\tmargin-left: 80px;\n}\n\n.main-nav-link {\n\tcolor: #083D8C;\n\ttext-decoration: none;\n\tfont-weight: bold;\n\tpadding: 0 30px;\n}\n\n.btn-nav {\n\tbackground: url(" + escape(__webpack_require__(31)) + ") 20px/15px no-repeat;\n\theight: 50px;\n\tfont-size: inherit;\n\tpadding: 0 25px 0 45px;\n\tborder-radius: 3px;\n\tborder: 1px solid #216DDF;\n\tmargin: 30px 70px 0 15px;\n\tfont-weight: 500;\n}\n\n/* ----- Main Page Content ----- */\nmain {\n\tbackground: url(" + escape(__webpack_require__(32)) + ") no-repeat;\n  background-position-y: -15px;\n  -webkit-background-size: contain;\n  -moz-background-size: contain;\n  -o-background-size: contain;\n  background-size: contain;\n}\n\n.container {\n\tmargin: 10px 100px;\n  padding-top: 100px;\n}\n\n.filter-container {\n\tbackground-color: #F6F6F6;\n\twidth: 100%;\n\theight: 80px;\n  border-radius: 10px;\n}\n\n.margin-left {\n  margin-left: 15%;\n}\n\n.filter-container p {\n  font-size: larger;\n}\n\n.vertical-line {\n  margin: 10px 30px -20px 30px;\n  border-left: 3px solid #ECECEC;\n  height: 55px;\n  display: inline-block;\n}\n\n.card {\n  display: inline-flex;\n  flex-flow: row wrap;\n  flex: auto;\n  flex-grow: 0;\n  color: #757575;\n  background-color: #fff;\n  width: 30.5%;\n  height: 520px;\n  margin: 30px 15px;\n  border-radius: 5px;\n  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */\n  -moz-box-shadow:    0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);  /* Firefox 3.5 - 3.6 */\n  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);\n}\n\n.card-header {\n\twidth: 100%;\n\theight: 100px;\n\tborder-bottom: 1px solid #ECECEC;\n  margin: 0 15px;\n}\n\n.card-header p {\n  font-size: 30px;\n  font-weight: 300;\n  text-align: center;\n}\n\n.phone-container {\n\ttext-align: center;\n\twidth: 100%;\n\tmargin-top: 30px;\n}\n\n.phone-container .phone-number p {\n\tfont-weight: bold;\n\tfont-size: xx-large;\n\tdisplay: inline;\n  vertical-align: super;\n  padding-left: 15px;\n  color: #3F3F3F;\n}\n\n.phone-container p {\n\tfont-size: small;\n}\n\n.phone-number img {\n\theight: 30px;\n\tdisplay: inline;\n}\n\n.phone-text {\n  font-style: italic;\n  margin: 20px 0 30px 0;\n}\n\n.btn-custom {\n\tbackground: url(" + escape(__webpack_require__(76)) + ") 20px/15px no-repeat;\n\theight: 50px;\n\tfont-size: inherit;\n\tpadding: 0 25px 0 45px;\n\tborder-radius: 3px;\n\tborder: 1px solid #02C7C6;\n\tcolor: #083D8C;\n\tfont-weight: 500;\n}\n\n.hours p {\n  font-weight: bold;\n  margin-top: 50px;\n  margin-bottom: 0;\n}\n\n.hours ul {\n\tlist-style: none;\n\tpadding-left: 0;\n  margin-top: 0;\n  margin-bottom: 30px;\n  font-size: small;\n}\n\n.card-footer {\n\tbackground-color: #F6F6F6;\n\theight: 50px;\n\twidth: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  padding: 25px 0 20px 45px;\n}\n\n.card-footer p {\n  display: inline;\n  font-size: small;\n  padding-left: 10px;\n}\n\n.service-certification {\n  width: 50%;\n}\n\n/* ----- Tooltip ----- */\n[data-tooltip] {\n  position: relative;\n  cursor: pointer;\n  vertical-align: bottom;\n}\n\n.tooltip:after {\n  visibility: hidden;\n  content: attr(data-tooltip);\n  white-space: nowrap;\n  padding: 10px;\n  background: rgba(97, 97, 97, 0.9);\n  color: #fff;\n  z-index: 100;\n  font-size: 12px;\n  font-weight: 500;\n  border-radius: 2px;\n  margin-left: 5px;\n}\n\n.tooltip:hover:after {\n  visibility: visible;\n}\n\n/* ----- Tooltip on the Right ----- */\n.tooltip-right:hover:before,\n.tooltip-right:hover:after {\n  transform: translateX(5px) translateY(-50%);   \n}\n\n.tooltip img {\n  border-radius: 5px;\n  vertical-align: middle;\n  margin-left: 8px;\n}\n\n/* ----- Custom Checkbox ----- */\n/* Customize the label (the container) */\n.custom-checkbox {\n  position: relative;\n  padding-left: 75px;\n  cursor: pointer;\n  font-size: small;\n  text-transform: capitalize;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n\n/* Hide the browser's default checkbox */\n.custom-checkbox input {\n  display: none;\n}\n\n/* Create a custom checkbox */\n.checkmark {\n  position: absolute;\n  top: -5px;\n  left: 35px;\n  height: 25px;\n  width: 25px;\n  background-color: #eee;\n  border-radius: 5px;\n}\n\n/* On mouse-over, add a grey background color */\n.custom-checkbox:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n\n/* When the checkbox is checked, add a blue background */\n.custom-checkbox input:checked ~ .checkmark {\n  background-color: #216DDF;\n}\n\n/* Create the checkmark/indicator (hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n\n/* Show the checkmark when checked */\n.custom-checkbox input:checked ~ .checkmark:after {\n  display: block;\n}\n\n/* Style the checkmark/indicator */\n.custom-checkbox .checkmark:after {\n  left: 8px;\n  top: 9px;\n  width: 8px;\n  border: solid white;\n  border-width: 8px 0 0 0;\n}\n\n/* ----- Modal ----- */\n.modal {\n  position: fixed; /* Stay in place */\n  z-index: 500; /* Sit on top */\n  left: 0;\n  top: 0;\n  width: 100%; /* Full width */\n  height: 100%; /* Full height */\n  overflow: auto; /* Enable scroll if needed */\n  background-color: rgb(0,0,0); /* Fallback color */\n  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n}\n\n/* Modal Content */\n.modal-content {\n  background-color: #fff;\n  margin: auto;\n  border: 1px solid #888;\n  width: 55%;\n  height: 930px;\n  position: absolute;\n  left: 34%;\n  top: 50%;\n  margin-left: -150px;\n  margin-top: -150px;\n  margin-bottom: 100px;\n  margin-top: -200px;\n}\n\n.modal-header {\n  background: #083D8C;\n  color: #fff;\n  height: 140px;\n  margin-top: -16px;\n  padding-left: 30px;\n}\n\n.modal-header > .email {\n  margin-top: 0;\n  padding-top: 40px;\n}\n\n.modal-header > .company-name {\n  font-size: 30px;\n  font-weight: 300;\n  margin: 0;\n}\n\n.modal-body {\n  margin: 30px;\n  color: #616161;\n  font-size: smaller;\n}\n\n.modal-body > form {\n  background: #F6F6F6;\n  padding: 30px 20px 0 20px; \n}\n\n.modal-body > form label {\n  font-weight: bold;\n}\n\n.modal-body > form img {\n  vertical-align: bottom;\n  margin-right: 5px;\n  height: 20px;\n  width: 20px;\n}\n\n.modal-body > form input {\n  display: block;\n  margin: 15px 0;\n  padding: 15px 10px;\n  width: 96.5%;\n  font-size: smaller;\n  color: #616161;\n  border: 1px solid #D8D8D8;\n}\n\n.custom-input {\n  width: 245px;\n}\n\n.custom-input input {\n  width: 223px;\n}\n\n.modal-body > form textarea {\n  margin: 15px 0;\n  padding: 15px 10px;\n  width: 96.5%;\n  height: 50px;\n  font-size: smaller;\n  color: #616161;\n  border-color: #D8D8D8;\n}\n\n.optional {\n  font-style: italic;\n}\n\n.btn-modal {\n  width: 60px;\n  line-height: 30px;\n  border-radius: 4px;\n  margin: 15px 0 20px 0;\n  font-size: medium;\n}\n\n.btn-transparent {\n  border: 1px solid #3F3F3F;\n  color: #3F3F3F;\n}\n\n.btn-success {\n  border: 1px solid #016B6A;\n  background: #01C7C6;\n  color: #fff;\n  margin-right: 10px;\n}\n\n\n.modal-submit {\n  color: #3F3F3F;\n  font-size: large;\n  font-weight: bold;\n\tborder-top: 1px solid #ECECEC;\n  text-align: center;\n  padding: 50px 0;\n}\n\n.modal-submit img {\n  margin-left: 20px;\n}\n\n.modal-footer {\n  background: #F6F6F6;\n  color: #616161;\n  font-size: small;\n  padding: 10px 30px;\n}\n\n/* The Close Button */\n.close {\n  color: #fff;\n  float: right;\n  font-size: 28px;\n  font-weight: bold;\n  line-height: 1;\n  background: transparent;\n  border: none;\n}\n\n.close:hover,\n.close:focus {\n  background: #F6F6F6;\n  color: #BEBEBE;\n  text-decoration: none;\n  cursor: pointer;\n}\n\n/* ----- Footer ----- */\nfooter {\n\theight: 130px;\n\tbackground-color: #083D8C;\n\tposition: absolute;\n  bottom: 0;\n  width: 100%;\n  text-align: center;\n  padding-top: 35px;\n  color: #fff;\n}\n\nfooter p {\n\tdisplay: inline;\n}\n\nfooter .icon {\n\theight: 15px;\n}\n\n.footer-logo {\n\twidth: 200px;\n}\n\n.footer-contact {\n  padding-top: 25px;\n}\n\n.footer-contact p {\n  padding-right: 30px;\n}\n\n.footer-contact img {\n  padding-right: 15px;\n}\n\n.copyright {\n\tline-height: 42px;\n\tbackground-color: #216DDF;\n\tcolor: #fff;\n\tfont-size: small;\n\tfont-weight: 300;\n\tmargin-top: 25px;\n}\n\n.copyright p{\n\tdisplay: inline;\n}\n\n.copyright span {\n  padding: 0 15px;\n}\n\n.copyright a {\n\tcolor: #fff;\n\ttext-decoration: none;\n}\n\n/* for mobile view only */\n.mobile-checkbox,\n.modal-body > form .mobile-submit,\n#main-nav .btn-mobile,\n.menu-mobile,\n.filter-mobile {\n  display: none;\n}\n\n/* ----- Laptop ----- */\n@media screen and (max-width: 1200px) {\n\t#main-nav .logo {\n\t\tmargin-right: 2%;\n    margin-left: 4%;\n\t}\n\n  .main-nav-link {\n    padding: 0 15px;\n  }\n\n  .container {\n    margin: 10px 5%;\n  }\n  \n  .margin-left {\n    margin-left: 7%;\n  }\n\n  .custom-checkbox {\n    padding-left: 50px;\n  }\n  .checkmark {\n    left: 20px;\n  }\n  .card {\n    width: 29.5%;\n  }\n  .modal-body > form input,\n  .modal-body > form textarea {\n    width: 96%;\n  }\n}\n\n/* ----- Tablet ----- */\n@media screen and (max-width: 1000px) {\n  /* needs menu */\n  .container {\n    margin: 10px 50px;\n  }\n  .margin-left {\n    margin-left: 2%;\n  }\n  .filter-container p {\n    font-size: medium;\n  }\n  .vertical-line {\n    margin: 10px 15px -20px 15px;\n  }\n  .custom-checkbox {\n    padding-left: 35px;\n  }\n  .checkmark {\n    left: 10px;\n  }\n  .card {\n    width: 45%;\n  }\n\n  #main-nav .btn-mobile {\n    height: 35px;\n    display: inline;\n    /* width 110 */\n    background: url(" + escape(__webpack_require__(31)) + ") 7px/15px no-repeat;\n    vertical-align: top;\n    font-size: inherit;\n    padding: 0 10px 0 25px;\n    border-radius: 3px;\n    border: 2px solid #216DDF;\n    color: #216DDF;\n    margin: 10px 15px;\n    font-weight: 500;\n  }\n\n  .menu-mobile {\n    display: inline;\n    padding: 0;\n  }\n\n  .menu-mobile img {\n    margin-top: 10px;\n  }\n  /* Dropdown Menu */\n  .menu {\n    line-height: 32px;\n    font-size: 15px;\n    width: -webkit-fill-available;\n  }\n\n  .menu-label {\n    position: absolute;\n    font-size:12px;\n    font-weight:normal;\n    pointer-events:none;\n    top: -40px;\n    width: 100%;\n  }\n\n  .menu div {\n    padding: 8px 0;\n    list-style: none;\n    white-space: nowrap;\n    overflow-y: auto;\n  }\n\n  .menu-height {\n    max-height: 250px;\n  }\n\n  .menu-content button {\n    color: #0BC9c8;\n  }\n\n  .menu-title {\n    color: #01529E;\n    font-weight: bold;\n    text-align: center;\n  }\n\n  .menu-open {\n    box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2);\n    position: absolute;\n    top: 0;\n    right: 0;\n    background: #fff;\n    border-top: 4px solid #0BC9c8;\n    border-bottom: 4px solid #0BC9C8;;\n    height: 420px;\n    z-index: 100;\n  }\n\n  .menu-open .menu-mobile {\n    visibility: visible;\n    z-index: 1;\n  }\n\n  .menu-open .menu-mobile img {\n    display: none;\n  }\n\n  .menu-open .menu-content .menu-link {\n    background: #F6F6F6;\n    color: #626262 !important;\n    list-style: none;\n    padding: 25px;\n    margin-left: -40px;\n    margin-bottom: 2px;\n  }\n\n  .menu-open .menu-mobile .menu-content .menu-link img {\n    display: inline;\n  }\n\n  .menu-closed .menu-mobile .menu-content {\n    display: none;\n  }\n\n  .modal-content {\n    left: 37%;\n  }\n\n  .modal-body > form input,\n  .modal-body > form textarea {\n    width: 94%;\n  }\n\n  .modal-header > .email {\n    padding-top: 20px;\n  }\n\n  #main-nav .menu-mobile img {\n    margin-top: 10px;\n  }\n\n  .main-nav-link,\n  .btn-nav {\n    display: none;\n  }\n}\n\n/* ----- Mobile ----- */\n@media screen and (max-width: 600px) {\n\n/* NavBars */\n.main {\n  background-position-x: center;\n}\n\n#blue-nav,\n.main-nav-link {\n  display:none;\n}\n\n#main-nav {\n  height: 55px;\n}\n#main-nav .logo {\n  margin: 20px 10px 15px 8px;\n  height: 20px;\n}\n\n\n/* Filter */\n.filter-container {\n  margin-left: -15px;\n  padding-right: 30px;\n}\n\n.container {\n  margin: 10px 15px;\n}\n\n.filter-mobile {\n  display: inline;\n}\n\n\n/* Cards */\n.card {\n  width: 100%;\n  margin: 0 0 2px 0;\n}\n\n.phone-number {\n  width: 245px;\n  background: #216DDF;\n  margin-left: 45px;\n}\n\n.phone-container .phone-number p {\n  color: #fff;\n}\n\n/* Modal */\n  .modal-content {\n    width: 85%;\n    height: 800px;\n    top: 40%;\n    left: 43%\n  }\n\n  .modal-header > .email {\n    padding-top: 20px;\n  }\n\n  .modal-body {\n    margin: 20px;\n    border-bottom: 1px solid #ECECEC;\n  }\n  \n  .modal-body > form {\n    background: #fff;\n    padding: 0;\n  }\n\n  .modal-body > form input,\n  .modal-body > form textarea {\n    width: 91%;\n  }\n\n  .modal-body > form .custom-input input {\n    width: 89%;\n  }\n\n  .mobile-checkbox {\n    display: inline;\n    line-height: 75px;\n  }\n\n  .mobile-checkbox .custom-checkbox {\n    margin: 15px;\n  }\n\n  .mobile-submit {\n    display: inline !important;\n    font-size: large;\n    font-weight: bold;\n    color: #01C7C6;\n  }\n\n  .modal-submit,\n  .btn-modal,\n  .modal-footer,\n  .btn-nav,\n  .filter-desktop {\n    display: none;\n  }\n}\n", ""]);
 
 // exports
 
@@ -25284,10 +25284,10 @@ var AppBar = function (_React$Component) {
               services.map(function (option, i) {
                 return _react2.default.createElement(
                   'li',
-                  { className: 'menu-link' },
+                  { key: i, className: 'menu-link' },
                   _react2.default.createElement(
                     'a',
-                    { key: i, href: option.link },
+                    { href: option.link },
                     option.name
                   ),
                   _react2.default.createElement('img', { src: _nextArrow2.default, alt: 'right arrow icon', className: 'd-inline float-right' })
@@ -25302,10 +25302,10 @@ var AppBar = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'div',
+        _react2.default.Fragment,
         null,
         _react2.default.createElement(
-          'div',
+          'nav',
           { id: 'blue-nav' },
           _react2.default.createElement(
             'span',
@@ -25324,27 +25324,31 @@ var AppBar = function (_React$Component) {
           )
         ),
         _react2.default.createElement(
-          'div',
+          'nav',
           { id: 'main-nav' },
           _react2.default.createElement('img', { src: _poolProsLogo2.default, alt: 'Pool Pros Logo', className: 'logo' }),
-          services.map(function (service) {
-            return _react2.default.createElement(
-              'a',
-              { href: '#', key: service.name, className: 'main-nav-link' },
-              service.name
-            );
-          }),
           _react2.default.createElement(
-            'button',
-            { className: 'btn-nav blue-text' },
-            'Find a Pool Pro'
-          ),
-          _react2.default.createElement(
-            'button',
-            { className: 'btn-mobile' },
-            'Find a Pro'
-          ),
-          this.renderMenu()
+            'div',
+            null,
+            services.map(function (service) {
+              return _react2.default.createElement(
+                'a',
+                { href: '#', key: service.name, className: 'main-nav-link' },
+                service.name
+              );
+            }),
+            _react2.default.createElement(
+              'button',
+              { className: 'btn-nav blue-text' },
+              'Find a Pool Pro'
+            ),
+            _react2.default.createElement(
+              'button',
+              { className: 'btn-mobile' },
+              'Find a Pro'
+            ),
+            this.renderMenu()
+          )
         )
       );
     }
@@ -25417,13 +25421,17 @@ var Footer = function Footer() {
     _react2.default.createElement('img', { src: _poolProsLogoFooter2.default, alt: 'Pool Pros Logo', className: 'footer-logo' }),
     _react2.default.createElement('br', null),
     _react2.default.createElement(
-      'p',
-      null,
-      'CONNECT WITH US'
+      'div',
+      { className: 'footer-contact' },
+      _react2.default.createElement(
+        'p',
+        null,
+        'CONNECT WITH US'
+      ),
+      _react2.default.createElement('img', { src: _twitterIcon2.default, alt: 'Twitter Icon', className: 'icon' }),
+      _react2.default.createElement('img', { src: _facebookIcon2.default, alt: 'Facebook Icon', className: 'icon' }),
+      _react2.default.createElement('img', { src: _youtubeIcon2.default, alt: 'YouTube Icon', className: 'icon' })
     ),
-    _react2.default.createElement('img', { src: _twitterIcon2.default, alt: 'Twitter Icon', className: 'icon' }),
-    _react2.default.createElement('img', { src: _facebookIcon2.default, alt: 'Facebook Icon', className: 'icon' }),
-    _react2.default.createElement('img', { src: _youtubeIcon2.default, alt: 'YouTube Icon', className: 'icon' }),
     _react2.default.createElement(
       'div',
       { className: 'copyright' },
@@ -25432,14 +25440,23 @@ var Footer = function Footer() {
         null,
         '\xA9 ',
         currentYear,
-        ' Pool Pros |'
+        ' Pool Pros'
+      ),
+      _react2.default.createElement(
+        'span',
+        null,
+        '|'
       ),
       _react2.default.createElement(
         'a',
         { href: '#' },
         'Privacy Policy'
       ),
-      ' |',
+      _react2.default.createElement(
+        'span',
+        null,
+        '|'
+      ),
       _react2.default.createElement(
         'a',
         { href: '#' },
@@ -25486,6 +25503,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(0);
@@ -25500,51 +25519,37 @@ var _Modal = __webpack_require__(90);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
+var _Card = __webpack_require__(91);
+
+var _Card2 = _interopRequireDefault(_Card);
+
 var _waterImage = __webpack_require__(32);
 
 var _waterImage2 = _interopRequireDefault(_waterImage);
 
-var _phoneIconDesktop = __webpack_require__(91);
-
-var _phoneIconDesktop2 = _interopRequireDefault(_phoneIconDesktop);
-
-var _phoneIconMobile = __webpack_require__(92);
+var _phoneIconMobile = __webpack_require__(97);
 
 var _phoneIconMobile2 = _interopRequireDefault(_phoneIconMobile);
 
-var _toolTipIconFiltering = __webpack_require__(93);
+var _toolTipIconFiltering = __webpack_require__(98);
 
 var _toolTipIconFiltering2 = _interopRequireDefault(_toolTipIconFiltering);
-
-var _starInstallationPro = __webpack_require__(94);
-
-var _starInstallationPro2 = _interopRequireDefault(_starInstallationPro);
-
-var _homeResidentialPro = __webpack_require__(95);
-
-var _homeResidentialPro2 = _interopRequireDefault(_homeResidentialPro);
-
-var _gearServicePro = __webpack_require__(96);
-
-var _gearServicePro2 = _interopRequireDefault(_gearServicePro);
-
-var _usersCommercialPro = __webpack_require__(97);
-
-var _usersCommercialPro2 = _interopRequireDefault(_usersCommercialPro);
 
 var _nextArrow = __webpack_require__(33);
 
 var _nextArrow2 = _interopRequireDefault(_nextArrow);
 
-var _circleForm = __webpack_require__(98);
+var _circleForm = __webpack_require__(99);
 
 var _circleForm2 = _interopRequireDefault(_circleForm);
 
-var _checkmarkCircle = __webpack_require__(99);
+var _checkmarkCircle = __webpack_require__(100);
 
 var _checkmarkCircle2 = _interopRequireDefault(_checkmarkCircle);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -25556,10 +25561,6 @@ var resultType = [{ name: 'service' }, { name: 'installation' }, { name: 'reside
 
 var capitalize = function capitalize(word) {
   return word.charAt(0).toUpperCase() + word.slice(1);
-};
-
-var formatPhone = function formatPhone(number) {
-  return number.replace(/[-]+/g, ".");
 };
 
 // To DO
@@ -25576,7 +25577,8 @@ var Main = function (_React$Component) {
     _this.state = {
       modalOpen: false,
       companyName: null,
-      filterValue: 'Filter Results'
+      filters: [],
+      isChecked: false
     };
     _this.toggleModal = _this.toggleModal.bind(_this);
     return _this;
@@ -25592,17 +25594,52 @@ var Main = function (_React$Component) {
       });
     }
   }, {
+    key: 'handleChange',
+    value: function handleChange(e) {
+      var _state = this.state,
+          filters = _state.filters,
+          isChecked = _state.isChecked;
+      var _e$target = e.target,
+          checked = _e$target.checked,
+          value = _e$target.value;
+
+      this.setState({ isChecked: !isChecked });
+
+      //if checked and not included in filters array (-1)
+      if (checked && filters.indexOf(value) === -1) {
+        this.setState({ filters: [].concat(_toConsumableArray(filters), [value]) });
+      }
+      if (!checked) {
+        var filterBy = filters.indexOf(value);
+        var newFilter = filters.filter(function (filterBy) {
+          return filterBy != value;
+        });
+        this.setState({ filters: newFilter });
+      }
+      return;
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
 
+      var _state2 = this.state,
+          filters = _state2.filters,
+          isChecked = _state2.isChecked;
       var dealers = _dealers2.default.dealers;
 
 
-      var menuProps = {
-        scrollable: true,
-        disable: false,
-        menuWidth: ''
+      var certs = filters.map(function (name) {
+        return capitalize(name) + " Pro";
+      });
+
+      var matchBusiness = function matchBusiness(dealer, certifications) {
+        var a = JSON.stringify(certifications.sort());
+        var b = JSON.stringify(certs.sort());
+        if (a === b) {
+          console.log('dealer', dealer.data);
+          return Object.assign({}, dealer.data);
+        }
       };
 
       return _react2.default.createElement(
@@ -25637,9 +25674,17 @@ var Main = function (_React$Component) {
               resultType.map(function (result) {
                 return _react2.default.createElement(
                   'label',
-                  { className: 'd-inline custom-checkbox', htmlFor: result.name },
-                  capitalize(result.name),
-                  _react2.default.createElement('input', { type: 'checkbox', id: result.name, name: 'results', value: result.name }),
+                  { key: result.name, className: 'd-inline custom-checkbox', htmlFor: result.name },
+                  result.name,
+                  _react2.default.createElement('input', {
+                    type: 'checkbox',
+                    name: 'results',
+                    checked: result.name.isChecked,
+                    onChange: function onChange(e) {
+                      return _this2.handleChange(e);
+                    },
+                    id: result.name,
+                    value: result.name }),
                   _react2.default.createElement('span', { className: 'checkmark' })
                 );
               }),
@@ -25655,131 +25700,29 @@ var Main = function (_React$Component) {
               resultType.map(function (result) {
                 return _react2.default.createElement(
                   'label',
-                  { className: 'custom-checkbox', htmlFor: result.name },
-                  capitalize(result.name),
+                  { key: result.name, className: 'custom-checkbox', htmlFor: result.name },
+                  result.name,
                   _react2.default.createElement('input', { type: 'checkbox', id: result.name, name: 'results', value: result.name }),
                   _react2.default.createElement('span', { className: 'checkmark' })
                 );
               })
             )
           ),
-          dealers.map(function (dealer) {
-            var hours = dealer.data.weekHours;
-            var name = dealer.data.name;
-            return _react2.default.createElement(
-              'div',
-              { className: 'card', key: name },
-              _react2.default.createElement(
-                'div',
-                { className: 'card-header' },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  name
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'phone-container' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'phone-number' },
-                  _react2.default.createElement('img', { src: _phoneIconDesktop2.default, alt: 'Phone icon' }),
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    formatPhone(dealer.data.phone1)
-                  )
-                ),
-                _react2.default.createElement(
-                  'p',
-                  { className: 'phone-text' },
-                  'Can\'t talk now? Click below to send an e-mail.'
-                ),
-                _react2.default.createElement(
-                  'button',
-                  { id: 'myBtn', className: 'btn-custom', onClick: function onClick(e) {
-                      return _this2.toggleModal(e, name);
-                    } },
-                  'Contact this Pro'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'hours' },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Business Hours'
-                  ),
-                  _react2.default.createElement(
-                    'ul',
-                    null,
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Weekdays ',
-                      hours.mon
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Saturdays ',
-                      !hours.sat ? hours.mon : hours.sat
-                    ),
-                    _react2.default.createElement(
-                      'li',
-                      null,
-                      'Sundays ',
-                      !hours.sun ? 'CLOSED' : hours.sun
-                    )
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'card-footer' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'service-certification' },
-                  _react2.default.createElement('img', { src: _starInstallationPro2.default, alt: 'Star icon', height: '12', width: '12' }),
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Installation Pro'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'service-certification' },
-                  _react2.default.createElement('img', { src: _gearServicePro2.default, alt: 'Gear icon', height: '12', width: '12' }),
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Service Pro'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'service-certification' },
-                  _react2.default.createElement('img', { src: _homeResidentialPro2.default, alt: 'House icon', height: '12', width: '12' }),
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Residential Pro'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'service-certification' },
-                  _react2.default.createElement('img', { src: _usersCommercialPro2.default, alt: 'Users icon', height: '12', width: '12' }),
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Commercial '
-                  )
-                )
-              )
-            );
+          dealers.map(function (dealer, i) {
+            var _dealer$data = dealer.data,
+                weekHours = _dealer$data.weekHours,
+                name = _dealer$data.name,
+                certifications = _dealer$data.certifications;
+
+            var cardProps = { weekHours: weekHours, name: name, certifications: certifications, dealer: dealer };
+            var dealerArray = matchBusiness(dealer, certifications);
+            if (dealerArray) {
+              return;
+            }
+            return _react2.default.createElement(_Card2.default, _extends({}, cardProps, {
+              dealerArray: dealerArray,
+              key: i,
+              toggleModal: _this2.toggleModal }));
           })
         ),
         _react2.default.createElement(
@@ -25862,6 +25805,11 @@ var Main = function (_React$Component) {
                   { htmlFor: 'comments' },
                   'Comments or questions?'
                 ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'optional d-inline float-right' },
+                  'optional'
+                ),
                 _react2.default.createElement('textarea', { id: 'comments', name: 'comments', wrap: 'soft' })
               ),
               _react2.default.createElement(
@@ -25871,6 +25819,11 @@ var Main = function (_React$Component) {
                   'label',
                   { htmlFor: 'pool' },
                   'Do you currently own a pool or spa?'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'optional d-inline float-right' },
+                  'optional'
                 ),
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(
@@ -26003,7 +25956,6 @@ var Modal = function (_React$Component) {
       if (!show) {
         return null;
       }
-      console.log('show', show);
       return _react2.default.createElement(
         'div',
         { className: 'modal' },
@@ -26025,52 +25977,225 @@ exports.default = Modal;
 /* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "src/img/phone-icon-desktop.png";
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _starInstallationPro = __webpack_require__(92);
+
+var _starInstallationPro2 = _interopRequireDefault(_starInstallationPro);
+
+var _homeResidentialPro = __webpack_require__(93);
+
+var _homeResidentialPro2 = _interopRequireDefault(_homeResidentialPro);
+
+var _gearServicePro = __webpack_require__(94);
+
+var _gearServicePro2 = _interopRequireDefault(_gearServicePro);
+
+var _usersCommercialPro = __webpack_require__(95);
+
+var _usersCommercialPro2 = _interopRequireDefault(_usersCommercialPro);
+
+var _phoneIconDesktop = __webpack_require__(96);
+
+var _phoneIconDesktop2 = _interopRequireDefault(_phoneIconDesktop);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var formatPhone = function formatPhone(number) {
+  return number.replace(/[-]+/g, ".");
+};
+
+var Card = function Card(props) {
+  var key = props.key,
+      toggleModal = props.toggleModal,
+      dealer = props.dealer,
+      certifications = props.certifications,
+      weekHours = props.weekHours,
+      name = props.name,
+      dealerArray = props.dealerArray;
+
+
+  return _react2.default.createElement(
+    _react2.default.Fragment,
+    null,
+    _react2.default.createElement(
+      'div',
+      { className: 'card', key: key },
+      _react2.default.createElement(
+        'div',
+        { className: 'card-header' },
+        _react2.default.createElement(
+          'p',
+          null,
+          name
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'phone-container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'phone-number' },
+          _react2.default.createElement('img', { src: _phoneIconDesktop2.default, alt: 'Phone icon' }),
+          _react2.default.createElement(
+            'p',
+            null,
+            formatPhone(dealer.data.phone1)
+          )
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'phone-text' },
+          'Can\'t talk now? Click below to send an e-mail.'
+        ),
+        _react2.default.createElement(
+          'button',
+          { id: 'myBtn', className: 'btn-custom', onClick: function onClick(e) {
+              return toggleModal(e, name);
+            } },
+          'Contact this Pro'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'hours' },
+          _react2.default.createElement(
+            'p',
+            null,
+            'Business Hours'
+          ),
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              'Weekdays ',
+              weekHours.mon
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'Saturdays ',
+              !weekHours.sat ? weekHours.mon : weekHours.sat
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              'Sundays ',
+              !weekHours.sun ? 'CLOSED' : weekHours.sun
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'card-footer' },
+        _react2.default.createElement(
+          'div',
+          { className: 'service-certification' },
+          _react2.default.createElement('img', { src: _starInstallationPro2.default, alt: 'Star icon', height: '12', width: '12' }),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Installation Pro'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'service-certification' },
+          _react2.default.createElement('img', { src: _gearServicePro2.default, alt: 'Gear icon', height: '12', width: '12' }),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Service Pro'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'service-certification' },
+          _react2.default.createElement('img', { src: _homeResidentialPro2.default, alt: 'House icon', height: '12', width: '12' }),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Residential Pro'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'service-certification' },
+          _react2.default.createElement('img', { src: _usersCommercialPro2.default, alt: 'Users icon', height: '12', width: '12' }),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Commercial '
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = Card;
 
 /***/ }),
 /* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "src/img/phone-icon-mobile.png";
+module.exports = __webpack_require__.p + "src/img/star-installation-pro.png";
 
 /***/ }),
 /* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "src/img/tool-tip-icon-filtering.png";
+module.exports = __webpack_require__.p + "src/img/home-residential-pro.png";
 
 /***/ }),
 /* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "src/img/star-installation-pro.png";
+module.exports = __webpack_require__.p + "src/img/gear-service-pro.png";
 
 /***/ }),
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "src/img/home-residential-pro.png";
+module.exports = __webpack_require__.p + "src/img/users-commercial-pro.png";
 
 /***/ }),
 /* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "src/img/gear-service-pro.png";
+module.exports = __webpack_require__.p + "src/img/phone-icon-desktop.png";
 
 /***/ }),
 /* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "src/img/users-commercial-pro.png";
+module.exports = __webpack_require__.p + "src/img/phone-icon-mobile.png";
 
 /***/ }),
 /* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "src/img/circle-form.png";
+module.exports = __webpack_require__.p + "src/img/tool-tip-icon-filtering.png";
 
 /***/ }),
 /* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "src/img/circle-form.png";
+
+/***/ }),
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "src/img/checkmark-circle.png";

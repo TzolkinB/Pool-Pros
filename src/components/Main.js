@@ -31,7 +31,8 @@ class Main extends React.Component {
       modalOpen: false,
       companyName: null,
       filters: [],
-      isChecked: false
+      isChecked: false,
+      menuOpen: false
     };
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -42,6 +43,17 @@ class Main extends React.Component {
       modalOpen: !this.state.modalOpen,
       companyName: name
     });
+  }
+
+  handleClick(e) {
+    const menuOpen = !this.state.menuOpen;
+    this.setState({menuOpen})
+  }
+
+  handleBlur() {
+    setTimeout(() => {
+      this.setState({ menuOpen: false });
+    }, 200)
   }
 
   handleChange(e) {
@@ -61,6 +73,47 @@ class Main extends React.Component {
     return;
   }
 
+  renderMenu() {
+    const { menuOpen } = this.state;
+    return(
+      <React.Fragment>
+      <div className="menu-button d-inline"
+        tabIndex="0"
+        onClick={this.handleClick.bind(this)}
+        onBlur={this.handleBlur.bind(this)}>
+        <p>
+          Filter Results
+          <span className="triangle">&#9660;</span>
+        </p>
+      </div>
+      <div className={`menu d-inline ${menuOpen ? "filter-menu-open" : "menu-closed"}`}>  
+        <ul className="filter-menu-content">
+          {resultType.map(result => {
+            return(
+              <li>
+                <label key={result.name} className="custom-checkbox" htmlFor={result.name}>
+                  {result.name}
+                  <input 
+                    type="checkbox"
+                    name="results"
+                    checked={result.name.isChecked}
+                    onChange={e => this.handleChange(e)}
+                    id={result.name}
+                    value={result.name} />
+                  <span className="checkmark"></span>
+                </label>
+              </li>
+            );
+          })}
+          <span className="tooltip tooltip-bottom" data-tooltip="Look at me I am a tooltip! ¯\_(ツ)_/¯">
+            <img src={Question} alt="Question mark" height="20" width="20" />
+          </span>
+        </ul>
+      </div>
+      </React.Fragment>
+    );
+  }
+
   render() {
     const { filters, isChecked } = this.state;
     const { dealers } = json;
@@ -73,7 +126,8 @@ class Main extends React.Component {
       const a = JSON.stringify(certifications.sort());
       const b = JSON.stringify(certs.sort());
       if(a === b){
-        console.log('dealer', dealer.data);
+        const {name} = dealer.data
+        alert(`${name} matches your filter selections.`);
         return {...dealer.data};
       }
     }
@@ -106,24 +160,13 @@ class Main extends React.Component {
               </span>
             </div>
             <div className="filter-mobile">
-              {resultType.map(result => {
-                return(
-                  <label key={result.name} className="custom-checkbox" htmlFor={result.name}>
-                    {result.name}
-                    <input type="checkbox" id={result.name} name="results" value={result.name} />
-                    <span className="checkmark"></span>
-                  </label>
-                );
-              })}
+              {this.renderMenu()}
             </div>
           </div>
           {dealers.map((dealer, i) => {
             const {weekHours, name, certifications} = dealer.data;
             const cardProps = { weekHours, name, certifications, dealer };
             let dealerArray = matchBusiness(dealer, certifications);
-            if(dealerArray) {
-              return;
-            }
             return(
               <Card
                 {...cardProps}
