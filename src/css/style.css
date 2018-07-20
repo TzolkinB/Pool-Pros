@@ -49,6 +49,8 @@ body {
 /* ----- BrandBar ----- */
 #main-nav {
 	height: 102px;
+  display: flex;
+  justify-content: space-between;
   -webkit-box-shadow: 0px 5px 6px -6px #000;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    0px 5px 6px -6px #000;  /* Firefox 3.5 - 3.6 */
   box-shadow: 0 5px 6px -6px #000;
@@ -58,13 +60,11 @@ body {
 	height: 32px;
 	margin-top: 35px;
 	margin-left: 80px;
-	margin-right: 27%;
 }
 
 .main-nav-link {
 	color: #083D8C;
 	text-decoration: none;
-	vertical-align: super;
 	font-weight: bold;
 	padding: 0 30px;
 }
@@ -72,12 +72,11 @@ body {
 .btn-nav {
 	background: url('./../img/location-icon.png') 20px/15px no-repeat;
 	height: 50px;
-	vertical-align: super;
 	font-size: inherit;
 	padding: 0 25px 0 45px;
 	border-radius: 3px;
 	border: 1px solid #216DDF;
-	margin-left: 15px;
+	margin: 30px 70px 0 15px;
 	font-weight: 500;
 }
 
@@ -483,7 +482,7 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 35px;
   color: #fff;
 }
 
@@ -499,17 +498,33 @@ footer .icon {
 	width: 200px;
 }
 
+.footer-contact {
+  padding-top: 25px;
+}
+
+.footer-contact p {
+  padding-right: 30px;
+}
+
+.footer-contact img {
+  padding-right: 15px;
+}
+
 .copyright {
-	line-height: 40px;
+	line-height: 42px;
 	background-color: #216DDF;
 	color: #fff;
 	font-size: small;
 	font-weight: 300;
-	margin-top: 39px;
+	margin-top: 25px;
 }
 
 .copyright p{
 	display: inline;
+}
+
+.copyright span {
+  padding: 0 15px;
 }
 
 .copyright a {

@@ -61,32 +61,34 @@ class AppBar extends React.Component {
 
   render() {
     return(
-      <div>
-        <div id="blue-nav">
+      <React.Fragment>
+        <nav id="blue-nav">
           <span className="float-right commercial-service">
             <a href="#"> Commercial Service</a>
             <img src={GoTo} alt="Go to arrow icon" />
           </span>
           <a href="#" className="float-right">Dealers and Distributors</a>
-        </div>
-        <div id="main-nav">
+        </nav>
+        <nav id="main-nav">
           <img src={Logo} alt="Pool Pros Logo" className="logo"/>
-          {services.map(service => {
-            return(
-              <a href="#" key={service.name} className="main-nav-link">
-                {service.name}
-              </a>
-            );
-          })}
-          <button className="btn-nav blue-text">
-            Find a Pool Pro
-          </button>
-          <button className="btn-mobile">
-            Find a Pro
-          </button>
-          {this.renderMenu()}
-        </div>
-      </div>
+          <div>
+            {services.map(service => {
+              return(
+                <a href="#" key={service.name} className="main-nav-link">
+                  {service.name}
+                </a>
+              );
+            })}
+            <button className="btn-nav blue-text">
+              Find a Pool Pro
+            </button>
+            <button className="btn-mobile">
+              Find a Pro
+            </button>
+            {this.renderMenu()}
+          </div>
+        </nav>
+      </React.Fragment>
     );
   }
 }
