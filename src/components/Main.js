@@ -1,15 +1,11 @@
 import React    from 'react';
 import json     from './../data/dealers.json';
 import Modal    from './Modal';
+import Card     from './Card';
 
 import WaterImg    from 'IMG/water-image.png';
-import PhoneDesk   from 'IMG/phone-icon-desktop.png';
 import PhoneMobile from 'IMG/phone-icon-mobile.png';
 import Question    from 'IMG/tool-tip-icon-filtering.png';
-import Star        from 'IMG/star-installation-pro.png'; 
-import Home        from 'IMG/home-residential-pro.png';
-import Gear        from 'IMG/gear-service-pro.png';
-import Users       from 'IMG/users-commercial-pro.png'; 
 import Arrow       from 'IMG/next-arrow.png';
 import EmptyCircle from 'IMG/circle-form.png';
 import CheckCircle from 'IMG/checkmark-circle.png';
@@ -25,10 +21,6 @@ const capitalize = word => {
   return (word.charAt(0).toUpperCase() + word.slice(1));
 };
 
-const formatPhone = number => {
-  return number.replace(/[-]+/g, ".");
-};
-
 // To DO
 // close modal when clicking outside of modal 
 
@@ -38,7 +30,8 @@ class Main extends React.Component {
     this.state = {
       modalOpen: false,
       companyName: null,
-      filterValue: 'Filter Results'
+      filters: [],
+      isChecked: false
     };
     this.toggleModal = this.toggleModal.bind(this);
   }
@@ -51,15 +44,40 @@ class Main extends React.Component {
     });
   }
 
-  render() {
-    const {dealers} = json;
+  handleChange(e) {
+    let { filters, isChecked } = this.state;
+    const {checked, value} = e.target;
+    this.setState({ isChecked: !isChecked});
     
-    const menuProps = {
-      scrollable: true,
-      disable: false,
-      menuWidth: ''
-    };
+    //if checked and not included in filters array (-1)
+    if(checked && filters.indexOf(value) === -1) {
+      this.setState({ filters: [...filters, value] });
+    }
+    if(!checked) {
+      const filterBy = filters.indexOf(value);
+      let newFilter = filters.filter(filterBy => filterBy != value);
+      this.setState({ filters: newFilter });
+    }
+    return;
+  }
 
+  render() {
+    const { filters, isChecked } = this.state;
+    const { dealers } = json;
+
+    const certs = filters.map(name => { 
+      return capitalize(name) + " Pro";
+    });
+
+    const matchBusiness = (dealer, certifications) => {
+      const a = JSON.stringify(certifications.sort());
+      const b = JSON.stringify(certs.sort());
+      if(a === b){
+        console.log('dealer', dealer.data);
+        return {...dealer.data};
+      }
+    }
+    
     return(
       <main>
         <div className="container">
@@ -72,7 +90,13 @@ class Main extends React.Component {
                 return(
                   <label key={result.name} className="d-inline custom-checkbox" htmlFor={result.name}>
                     {result.name}
-                    <input type="checkbox" id={result.name} name="results" value={result.name} />
+                    <input 
+                      type="checkbox"
+                      name="results"
+                      checked={result.name.isChecked}
+                      onChange={e => this.handleChange(e)}
+                      id={result.name}
+                      value={result.name} />
                     <span className="checkmark"></span>
                   </label>
                 );
@@ -82,62 +106,30 @@ class Main extends React.Component {
               </span>
             </div>
             <div className="filter-mobile">
-                  {resultType.map(result => {
-                    return(
-                      <label key={result.name} className="custom-checkbox" htmlFor={result.name}>
-                        {result.name}
-                        <input type="checkbox" id={result.name} name="results" value={result.name} />
-                        <span className="checkmark"></span>
-                      </label>
-                    );
-                  })}
+              {resultType.map(result => {
+                return(
+                  <label key={result.name} className="custom-checkbox" htmlFor={result.name}>
+                    {result.name}
+                    <input type="checkbox" id={result.name} name="results" value={result.name} />
+                    <span className="checkmark"></span>
+                  </label>
+                );
+              })}
             </div>
           </div>
-          {dealers.map(dealer => {
-            const hours = dealer.data.weekHours;
-            const name = dealer.data.name;
+          {dealers.map((dealer, i) => {
+            const {weekHours, name, certifications} = dealer.data;
+            const cardProps = { weekHours, name, certifications, dealer };
+            let dealerArray = matchBusiness(dealer, certifications);
+            if(dealerArray) {
+              return;
+            }
             return(
-              <div className="card" key={name}>
-                <div className="card-header">
-                  <p>{name}</p>
-                </div>
-                <div className="phone-container">
-                  <div className="phone-number">
-                    <img src={PhoneDesk} alt="Phone icon" />
-                    <p>{formatPhone(dealer.data.phone1)}</p>
-                  </div>
-                  <p className="phone-text">Can't talk now? Click below to send an e-mail.</p>
-                  <button id="myBtn" className="btn-custom" onClick={e => this.toggleModal(e, name)}>
-                    Contact this Pro
-                  </button>
-                  <div className="hours">
-                    <p>Business Hours</p>
-                    <ul>
-                      <li>Weekdays {hours.mon}</li>
-                      <li>Saturdays {!hours.sat ? hours.mon : hours.sat}</li>
-                      <li>Sundays {!hours.sun ? 'CLOSED' : hours.sun}</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="card-footer">
-                  <div className="service-certification">
-                    <img src={Star} alt="Star icon" height="12" width="12" />
-                    <p>Installation Pro</p>
-                  </div>
-                  <div className="service-certification">
-                    <img src={Gear} alt="Gear icon" height="12" width="12" />
-                    <p>Service Pro</p>
-                  </div>
-                  <div className="service-certification">
-                    <img src={Home} alt="House icon" height="12" width="12" />
-                    <p>Residential Pro</p>
-                  </div>
-                  <div className="service-certification">
-                    <img src={Users} alt="Users icon" height="12" width="12" />
-                    <p>Commercial </p>
-                  </div>
-                </div>
-              </div>
+              <Card
+                {...cardProps}
+                dealerArray={dealerArray}
+                key={i}
+                toggleModal={this.toggleModal} />
             );
           })}
         </div>
@@ -169,10 +161,12 @@ class Main extends React.Component {
               </div>
               <div>
                 <label htmlFor="comments">Comments or questions?</label>
+                <p className="optional d-inline float-right">optional</p>
                 <textarea id="comments" name="comments" wrap="soft"></textarea>
               </div>
               <div>
                 <label htmlFor="pool">Do you currently own a pool or spa?</label>
+                <p className="optional d-inline float-right">optional</p>
                 <br/>
                 <button type="button" className="btn-modal btn-success">Yes</button>
                 <button type="button" className="btn-modal btn-transparent">No</button>

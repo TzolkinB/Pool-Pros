@@ -12,13 +12,17 @@ const Footer = () => {
     <footer>
       <img src={LogoFooter} alt="Pool Pros Logo" className="footer-logo" />
       <br/>
-      <p>CONNECT WITH US</p>
-      <img src={Twitter} alt="Twitter Icon" className="icon" />
-      <img src={Facebook} alt="Facebook Icon" className="icon" />
-      <img src={YouTube} alt="YouTube Icon" className="icon" />
+      <div className="footer-contact">
+        <p>CONNECT WITH US</p>
+        <img src={Twitter} alt="Twitter Icon" className="icon" />
+        <img src={Facebook} alt="Facebook Icon" className="icon" />
+        <img src={YouTube} alt="YouTube Icon" className="icon" />
+      </div>
       <div className="copyright">
-        <p>&#169; {currentYear} Pool Pros |</p>
-        <a href="#">Privacy Policy</a> |
+        <p>&#169; {currentYear} Pool Pros</p>
+        <span>|</span>
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
         <a href="#">Terms and Conditions</a>
       </div>
     </footer>
