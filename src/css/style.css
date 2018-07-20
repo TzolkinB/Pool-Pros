@@ -779,13 +779,13 @@ footer .icon {
     box-sizing: border-box;
     position: absolute;
     cursor: pointer;
-    margin-left: 2.5%;
+    margin-left: 10px;
     border: 1px solid #D8D8D8;
     transition: background .3s ease;
   }
 
   .menu-button p {
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 15px;
     font-size: large;
   }
@@ -803,7 +803,7 @@ footer .icon {
     padding: 5px 20px;
     line-height: 45px;
     margin-top: -15px;
-    margin-left: 20px;
+    margin-left: 15px;
     background-color: #F6F6F6;
     border-left: 1px solid #D8D8D8;
     float: right;
