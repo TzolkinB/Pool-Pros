@@ -388,9 +388,10 @@ main {
 }
 
 .modal-body > form input {
+  display: block;
   margin: 15px 0;
   padding: 15px 10px;
-  width: 575px;
+  width: 96.5%;
   font-size: smaller;
   color: #616161;
   border: 1px solid #D8D8D8;
@@ -407,11 +408,15 @@ main {
 .modal-body > form textarea {
   margin: 15px 0;
   padding: 15px 10px;
-  width: 575px;
+  width: 96.5%;
   height: 50px;
   font-size: smaller;
   color: #616161;
   border-color: #D8D8D8;
+}
+
+.optional {
+  font-style: italic;
 }
 
 .btn-modal {
@@ -544,11 +549,22 @@ footer .icon {
 /* ----- Laptop ----- */
 @media screen and (max-width: 1200px) {
 	#main-nav .logo {
-		margin-right: 7%;
+		margin-right: 2%;
+    margin-left: 4%;
 	}
+
+  .main-nav-link {
+    padding: 0 15px;
+  }
+
+  .container {
+    margin: 10px 5%;
+  }
+  
   .margin-left {
     margin-left: 7%;
   }
+
   .custom-checkbox {
     padding-left: 50px;
   }
@@ -588,13 +604,114 @@ footer .icon {
   .card {
     width: 45%;
   }
+
+  #main-nav .btn-mobile {
+    height: 35px;
+    display: inline;
+    /* width 110 */
+    background: url('./../img/location-icon.png') 7px/15px no-repeat;
+    vertical-align: top;
+    font-size: inherit;
+    padding: 0 10px 0 25px;
+    border-radius: 3px;
+    border: 2px solid #216DDF;
+    color: #216DDF;
+    margin: 10px 15px;
+    font-weight: 500;
+  }
+
+  .menu-mobile {
+    display: inline;
+    padding: 0;
+  }
+
+  .menu-mobile img {
+    margin-top: 10px;
+  }
+  /* Dropdown Menu */
+  .menu {
+    line-height: 32px;
+    font-size: 15px;
+    width: -webkit-fill-available;
+  }
+
+  .menu-label {
+    position: absolute;
+    font-size:12px;
+    font-weight:normal;
+    pointer-events:none;
+    top: -40px;
+    width: 100%;
+  }
+
+  .menu div {
+    padding: 8px 0;
+    list-style: none;
+    white-space: nowrap;
+    overflow-y: auto;
+  }
+
+  .menu-height {
+    max-height: 250px;
+  }
+
+  .menu-content button {
+    color: #0BC9c8;
+  }
+
+  .menu-title {
+    color: #01529E;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .menu-open {
+    box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    border-top: 4px solid #0BC9c8;
+    border-bottom: 4px solid #0BC9C8;;
+    height: 420px;
+    z-index: 100;
+  }
+
+  .menu-open .menu-mobile {
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .menu-open .menu-mobile img {
+    display: none;
+  }
+
+  .menu-open .menu-content .menu-link {
+    background: #F6F6F6;
+    color: #626262 !important;
+    list-style: none;
+    padding: 25px;
+    margin-left: -40px;
+    margin-bottom: 2px;
+  }
+
+  .menu-open .menu-mobile .menu-content .menu-link img {
+    display: inline;
+  }
+
+  .menu-closed .menu-mobile .menu-content {
+    display: none;
+  }
+
   .modal-content {
     left: 37%;
   }
+
   .modal-body > form input,
   .modal-body > form textarea {
     width: 94%;
   }
+
   .modal-header > .email {
     padding-top: 20px;
   }
@@ -603,7 +720,8 @@ footer .icon {
     margin-top: 10px;
   }
 
-  .main-nav-link{
+  .main-nav-link,
+  .btn-nav {
     display: none;
   }
 }
@@ -629,29 +747,6 @@ footer .icon {
   height: 20px;
 }
 
-#main-nav .btn-mobile{
-  height: 35px;
-  display: inline;
-  /* width 110 */
-	background: url('./../img/location-icon.png') 7px/15px no-repeat;
-	vertical-align: top;
-	font-size: inherit;
-	padding: 0 10px 0 25px;
-	border-radius: 3px;
-	border: 2px solid #216DDF;
-	color: #216DDF;
-  margin: 10px 15px;
-	font-weight: 500;
-}
-
-.menu-mobile {
-  display: inline;
-  padding: 0;
-}
-
-.menu-mobile img {
-  margin-top: 10px;
-}
 
 /* Filter */
 .filter-container {
@@ -667,80 +762,6 @@ footer .icon {
   display: inline;
 }
 
-/* Dropdown Menu */
-.menu {
-  line-height: 32px;
-  font-size: 15px;
-  width: -webkit-fill-available;
-}
-
-.menu-label {
-  position: absolute;
-  font-size:12px;
-  font-weight:normal;
-  pointer-events:none;
-  top: -40px;
-  width: 100%;
-}
-
-.menu div {
-  padding: 8px 0;
-  list-style: none;
-  white-space: nowrap;
-  overflow-y: auto;
-}
-
-.menu-height {
-  max-height: 250px;
-}
-
-.menu-content button {
-  color: #0BC9c8;
-}
-
-.menu-title {
-  color: #01529E;
-  font-weight: bold;
-  text-align: center;
-}
-
-.menu-open {
-  box-shadow: 0px 2px 6px 0 rgba(0,0,0,0.2);
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #fff;
-  border-top: 4px solid #0BC9c8;
-  border-bottom: 4px solid #0BC9C8;;
-  height: 420px;
-  z-index: 100;
-}
-
-.menu-open .menu-mobile {
-  visibility: visible;
-  z-index: 1;
-}
-
-.menu-open .menu-mobile img {
-  display: none;
-}
-
-.menu-open .menu-content .menu-link {
-  background: #F6F6F6;
-  color: #626262 !important;
-  list-style: none;
-  padding: 25px;
-  margin-left: -40px;
-  margin-bottom: 2px;
-}
-
-.menu-open .menu-mobile .menu-content .menu-link img {
-  display: inline;
-}
-
-.menu-closed .menu-mobile .menu-content {
-  display: none;
-}
 
 /* Cards */
 .card {
@@ -749,7 +770,7 @@ footer .icon {
 }
 
 .phone-number {
-  width: 245;
+  width: 245px;
   background: #216DDF;
   margin-left: 45px;
 }
@@ -760,9 +781,10 @@ footer .icon {
 
 /* Modal */
   .modal-content {
-    width: 58.5%;
+    width: 85%;
     height: 800px;
     top: 40%;
+    left: 43%
   }
 
   .modal-header > .email {

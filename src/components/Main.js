@@ -161,10 +161,12 @@ class Main extends React.Component {
               </div>
               <div>
                 <label htmlFor="comments">Comments or questions?</label>
+                <p className="optional d-inline float-right">optional</p>
                 <textarea id="comments" name="comments" wrap="soft"></textarea>
               </div>
               <div>
                 <label htmlFor="pool">Do you currently own a pool or spa?</label>
+                <p className="optional d-inline float-right">optional</p>
                 <br/>
                 <button type="button" className="btn-modal btn-success">Yes</button>
                 <button type="button" className="btn-modal btn-transparent">No</button>
